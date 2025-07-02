@@ -56,12 +56,12 @@ fetch(url)
         serInfodata.appendChild(dataElement);
       });
     } else {
-      contenedor.innerHTML = `<h1>Servicio no encontrado</h1>`;
+      title.innerHTML = `<h1>Servicio no encontrado</h1>`;
     }
   })
   .catch(error => {
     console.error('Error al cargar el JSON:', error);
-    contenedor.innerHTML = `<h1>Error al cargar los servicios</h1>`;
+    title.innerHTML = `<h1>Error al cargar los servicios</h1>`;
   });
 
 
