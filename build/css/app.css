@@ -1286,6 +1286,15 @@ table {
     text-align: center;
   }
 }
+.hero__services--title2 {
+  margin-top: 10rem;
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .hero__services--title2 {
+    text-align: center;
+  }
+}
 .hero__services--subtitle {
   color: var(--colorHover);
   font-style: italic;

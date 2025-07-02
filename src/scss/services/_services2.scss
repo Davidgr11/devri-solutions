@@ -10,6 +10,14 @@
             text-align: center;
         }
     }
+    &--title2 {
+        margin-top: v.$spaceBig;
+        padding-bottom: v.$spaceSmall;
+
+        @include m.tablet {
+            text-align: center;
+        }
+    }
     &--subtitle {
         color: var(--colorHover);
         font-style: v.$fontStyleSecondary;
