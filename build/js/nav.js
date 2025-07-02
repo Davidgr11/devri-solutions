@@ -22,6 +22,10 @@ const logo2 = document.querySelector(".footer__logo--img");
 
 // EVENT LISTENERS
 document.addEventListener("DOMContentLoaded", () => {
+    const copy = document.querySelector('.footer__copy');
+    const currentYear = new Date().getFullYear();
+    copy.textContent = `© ${currentYear} DEVRI SAPI DE CV. Todos los derechos reservados.`;
+    
     const saved = localStorage.getItem("theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     const currentTheme = saved || (prefersDark ? "dark" : "light");
