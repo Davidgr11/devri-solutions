@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <!--TITLE-->
+    <title>Devri Solutions</title>
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="DEVRI SAPI DE CV">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="build/assets/icons/devri-logo-light.svg">
+    <!--FONTS & ICONS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <!--PAGE RELATIONS-->
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="bar">
+            <!--Logo and Title-->
+            <a href="/" class="bar__logo">
+                <img src="build/assets/icons/devri-logo-dark.svg" alt="Devri Solutions Logo" class="bar__logo--img">
+                <p class="bar__logo--text">DEVRI</p>
+            </a>
+
+            <!--Navigation-->
+            <button class="bar__burgerMenu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+            <nav class="desktop">
+
+                <ul class="desktop__list">
+                    <li class="desktop__item">
+                        <div class="desktop__theme-toggle">
+                            <span class="material-symbols-rounded theme-icon">light_mode</span>
+                            <input type="checkbox" id="desktop-theme-toggle" />
+                            <label for="desktop-theme-toggle" class="switch"></label>
+                        </div>
+                    </li>
+                    <li><a href="/" class="desktop__link">Inicio</a></li>
+
+                    <li class="desktop__dropdown">
+                        <button class="desktop__link active desktop__dropdown--btn" aria-expanded="false">
+                            Servicios
+                            <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                        </button>
+                        <ul class="desktop__submenu">
+                            <li class="desktop__dropdown2">
+                                <button class="desktop__link desktop__dropdown2--btn2" aria-expanded="false">
+                                    SOFTWARE
+                                    <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                                </button>
+                                <ul class="desktop__submenu2">
+                                    <li class="desktop__option"><a href="/landing-pages">Landing Pages</a>
+                                    </li>
+                                    <li class="desktop__option"><a href="/sitios-web">Sitios Web</a></li>
+                                    <li class="desktop__option"><a href="/automatizaciones">Automatizaciones</a>
+                                    </li>
+                                    <li class="desktop__option"><a href="/tiendas-en-linea">Tiendas en
+                                            Línea</a></li>
+                                    <li class="desktop__option"><a href="/aplicaciones-web">Aplicaciones Web</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="desktop__dropdown3">
+                                <button class="desktop__link desktop__dropdown3--btn3" aria-expanded="false">
+                                    MARKETING
+                                    <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                                </button>
+                                <ul class="desktop__submenu3">
+                                    <li class="desktop__option"><a href="/diseño-marca">Diseño de
+                                            Marcas</a></li>
+                                    <li class="desktop__option"><a href="/redes-sociales">Gestión de
+                                            Redes</a></li>
+                                    <li class="desktop__option"><a href="/publicidad">Publicidad</a></li>
+                                </ul>
+                            </li>
+                            <!--<li><a href="servicio2.html">Marketing</a></li>-->
+                        </ul>
+                    </li>
+
+                    <li class="desktop__item"><a href="/proyectos" class="desktop__link">PROYECTOS</a></li>
+                    <li class="desktop__item"><a href="/cotizar" class="desktop__link">COTIZAR</a></li>
+                    <li class="desktop__item"><a href="/servicios" class="desktop__link">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="mobile" aria-hidden="true">
+            <div class="mobile__theme-toggle">
+                <span class="material-symbols-rounded theme-icon">light_mode</span>
+                <input type="checkbox" id="theme-toggle" />
+                <label for="theme-toggle" class="switch"></label>
+            </div>
+
+            <!--Close Button-->
+            <button class="mobile__close" aria-label="Cerrar menú">
+                <span class="material-symbols-rounded">close</span>
+            </button>
+
+            <!--Navigation Links-->
+            <ul class="mobile__list">
+                <li><a href="/" class="mobile__link">Inicio</a></li>
+
+                <li class="mobile__dropdown">
+                    <button class="mobile__link active mobile__dropdown--btn" aria-expanded="false">
+                        Servicios
+                        <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                    </button>
+                    <ul class="mobile__submenu">
+                        <li class="mobile__dropdown2">
+                            <button class="mobile__link mobile__dropdown2--btn2" aria-expanded="false">
+                                SOFTWARE
+                                <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                            </button>
+                            <ul class="mobile__submenu2">
+                                <li class="mobile__option"><a href="/landing-pages">Landing Pages</a></li>
+                                <li class="mobile__option"><a href="/sitios-web">Sitios Web</a></li>
+                                <li class="mobile__option"><a href="/automatizaciones">Automatizaciones</a></li>
+                                <li class="mobile__option"><a href="/tiendas-en-linea">Tiendas en Línea</a>
+                                </li>
+                                <li class="mobile__option"><a href="/aplicaciones-web">Aplicaciones Web</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__dropdown3">
+                            <button class="mobile__link mobile__dropdown3--btn3" aria-expanded="false">
+                                MARKETING
+                                <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                            </button>
+                            <ul class="mobile__submenu3">
+                                <li class="mobile__option"><a href="/diseño-marca">Diseño de Marcas</a>
+                                </li>
+                                <li class="mobile__option"><a href="/redes-sociales">Gestión de Redes</a>
+                                </li>
+                                <li class="mobile__option"><a href="/publicidad">Publicidad</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a href="servicio2.html">Marketing</a></li>-->
+                    </ul>
+                </li>
+
+                <li class="mobile__item"><a href="/proyectos" class="mobile__link">PROYECTOS</a></li>
+                <li class="mobile__item"><a href="/cotizar" class="mobile__link">COTIZAR</a></li>
+                <li class="mobile__item"><a href="/servicios" class="mobile__link">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero__services block">
+        <h1 class="hero__services--title"></h1>
+        <h3 class="hero__services--subtitle"></h3>
+        <div class="hero__services--buttons">
+            <a href="proyectos.html">Proyectos</a>
+            <a href="#service-info">Conocer Más</a>
+        </div>
+    </section>
+
+    <!-- Service Description -->
+    <main class="serInfo block" id="service-info">
+        <h2 class="serInfo__title"></h2>
+        <div class="serInfo__container">
+            <div class="serInfo__content">
+                <p class="serInfo__text"></p>
+            </div>
+            <img class="serInfo__img" src="" lazyalt="" loading="lazy" decoding="async">
+        </div>
+        <h2 class="serInfo__title2"></h2>
+        <!-- Service Use Cases -->
+        <div class="serInfo__usos">
+        </div>
+    </main>
+
+    <!-- Service Data -->
+    <aside class="serInfo__aside block">
+        <h2 class="serInfo__title3">¿Que impacto tiene?</h2>
+        <div class="serInfo__data">
+
+        </div>
+        <iframe class="serInfo__video" src="https://www.youtube.com/embed/aAtGJzqY0qg?si=12N9CluVOx2qeoKh"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </aside>
+
+    <section class="serInfo__cta block">
+        <h2 class="serInfo__cta--title">¿Listo para llevar tu proyecto al siguiente nivel?</h2>
+        <button class="serInfo__cta--btn">
+            <a href="cotizar.html">Cotiza</a>
+        </button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <!--Logo and Title-->
+            <div class="footer__general">
+                <a href="index.html" class="footer__logo">
+                    <img src="build/assets/icons/devri-logo-dark.svg" alt="Devri Solutions Logo"
+                        class="footer__logo--img">
+                    <p class="footer__logo--text">DEVRI</p>
+                </a>
+                <address>Ciudad de México, México, 07600.</address>
+            </div>
+            <div class="footer__information">
+                <div class="footer__block">
+                    <h4 class="footer__block--title">Horarios</h4>
+                    <ul class="footer__block--list">
+                        <li>Lunes a Viernes</li>
+                        <li>9 AM - 5 PM </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__block--title">Contacto</h4>
+                    <ul class="footer__block--list">
+                        <li><a href="mailto:info@devri.com.mx?subject=Asunto...&body=Mensaje...">info@devri.com.mx</a>
+                        </li>
+                        <li><a href="tel:5531434429">+52 55 31 43 44 29</a></li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__block--title">Empresa</h4>
+                    <ul class="footer__block--list">
+                        <li><a href="/servicio-social">Servicio Social</a></li>
+                        <li><a href="/bolsa-laboral">Bolsa de Trabajo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy"></p>
+
+    </footer>
+    <script src="build/js/nav.js"></script>
+    <script src="build/js/services.js"></script>
+</body>
+
+</html>

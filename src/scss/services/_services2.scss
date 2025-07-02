@@ -1,0 +1,170 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.hero__services {
+    &--title {
+        margin-top: v.$spaceBig;
+        padding-bottom: v.$spaceSmall;
+
+        @include m.tablet {
+            text-align: center;
+        }
+    }
+    &--subtitle {
+        color: var(--colorHover);
+        font-style: v.$fontStyleSecondary;
+
+        @include m.tablet {
+            text-align: center;
+        }
+    }
+    &--buttons {
+        gap: v.$spaceSmall;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: v.$spaceSmall auto;
+        @include m.tablet {
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            width: 60%;
+            gap: v.$spaceRegular;
+        }
+
+        a {
+            @include m.btn(var(--colorHover), var(--colorBackground1));
+        }
+    }
+}
+
+.serInfo{
+
+    &__container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: v.$spaceRegular;
+
+        @include m.tablet {
+            flex-direction: row;
+            gap: v.$spaceBig;
+        }
+    }
+    &__title {
+        padding-bottom: v.$spaceSmall;
+        @include m.desktop {
+            padding: 0;
+        }
+    }
+    &__img {
+        width: 80%;
+        @include m.mobile {
+            width: 70%;
+            height: auto;
+        }
+        @include m.tablet {
+            width: 30%;
+            height: auto;
+        }
+        @include m.desktop {
+            width: 25%;
+            height: auto;
+        }
+    }
+
+    &__title2 {
+        margin: v.$spaceRegular 0 v.$spaceSmall 0;
+    }
+
+    &__usos{
+        display: flex;
+        flex-direction: column;
+        gap: v.$spaceSmall;
+        background-color: var(--colorFooter);
+        padding: v.$spaceSmall;
+        border-radius: v.$spaceSmall;
+        box-shadow: 0 1rem 1rem var(--colorFooter);
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: v.$spaceRegular;
+        }
+        @include m.desktop {
+            column-gap: v.$spaceBig;
+        }
+    }
+    &__uso{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: v.$spaceSmall;
+        font-weight: v.$fontWeightBold;
+        span {
+            margin: 0;
+        }
+        .material-symbols-rounded {
+            color: var(--colorHover);
+            font-size: 4rem;
+        }
+    }
+
+    &__video {
+        width: 100%;
+        height: 20rem;
+        border-radius: v.$spaceSmall;
+        margin: 0 auto;
+        @include m.mobile {
+            height: 30rem;
+        }
+        @include m.tablet {
+            height: 40rem;
+        }
+        @include m.desktop {
+            height: 50rem;
+        }
+    }
+
+    &__data{
+        padding: v.$spaceSmall 0;
+        display: flex;
+        flex-direction: column;
+        gap: v.$spaceSmall;
+
+        @include m.tablet {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: v.$spaceBig;
+            
+        }
+
+        &--container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: v.$spaceTiny;
+            border-radius: v.$spaceSmall;
+        }
+        &--number {
+            font-size: 3.2rem;
+            font-weight: v.$fontWeightBold;
+            color: var(--colorHover);
+        }
+        &--text {
+            font-style: v.$fontStyleSecondary;
+        }
+    }
+    &__cta{
+        &--btn{
+            width: 50%;
+            margin: 0 auto;
+            margin-top: v.$spaceSmall;
+            @include m.btn(var(--colorHoverSecondary), var(--colorBackground1));
+
+            @include m.tablet {
+                width: 30%;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.hero {
+    margin-top: 12rem;
+
+    &__title {
+        @include m.tablet {
+            text-align: center;
+        }
+    }
+    &__subtitle {
+        margin: v.$spaceSmall v.$spaceSmall;
+        font-weight: v.$fontWeightBold;
+        font-style: v.$fontStyleSecondary;
+        color: var(--colorHover);
+        @include m.tablet {
+            text-align: center;
+        }
+    }
+    &__description {
+        margin: 0 v.$spaceSmall;
+        font-weight: v.$fontWeightRegular;
+        color: var(--colorText1);
+        @include m.tablet {
+            text-align: center;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: v.$spaceSmall;
+        width: 50%;
+        margin: v.$spaceSmall auto;
+
+        @include m.tablet{
+            width: 30%;
+        }
+
+    }
+}

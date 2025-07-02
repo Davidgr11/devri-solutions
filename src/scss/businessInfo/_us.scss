@@ -1,0 +1,212 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.us {
+
+    // GENERAL
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: v.$spaceRegular;
+    }
+
+    // STATS
+    &__stats {
+        &__title {
+            margin: v.$spaceSmall 0;
+
+            @include m.tablet {
+                text-align: justify;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: v.$spaceSmall;
+
+            @include m.tablet {
+                grid-column: 1/2;
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: v.$spaceTiny;
+            }
+        }
+
+        &__divider {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include m.tablet {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+            }
+        }
+
+        &__img {
+            width: 80%;
+            height: auto;
+            object-fit: cover;
+            margin: 0 auto;
+            border-radius: v.$spaceSmall;
+            margin-bottom: v.$spaceSmall;
+        }
+    }
+
+    &__stat {
+        text-align: center;
+
+        &--number {
+            font-size: 2.2rem;
+            color: var(--colorHover);
+            font-weight: v.$fontWeightBold;
+
+            @include m.tablet {
+                font-size: 3rem;
+            }
+        }
+
+        &:nth-child(even) {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        &:nth-child(odd) {
+            grid-column: 1/2;
+        }
+
+        &:nth-child(3) {
+            grid-row: 3/4;
+        }
+    }
+
+
+    // PROCESS
+    &__process {
+        &__description {
+            margin: v.$spaceSmall 0;
+
+            @include m.tablet {
+                text-align: justify;
+            }
+        }
+
+        &__steps {
+            display: flex;
+            flex-direction: column;
+            gap: v.$spaceSmall;
+
+            @include m.desktop {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: v.$spaceRegular;
+            }
+
+        }
+
+        &__step {
+            display: flex;
+            align-items: center;
+            justify-content: center !important;
+            gap: v.$spaceSmall;
+            padding-bottom: v.$spaceSmall;
+            border-bottom: 0.3rem solid var(--colorHoverSecondary);
+
+            &--title {
+                text-align: justify;
+                color: var(--colorBackground2);
+            }
+
+            &--info {
+                order: 1;
+                display: flex;
+                flex-direction: column;
+                gap: v.$spaceTiny;
+            }
+
+            &--icon {
+                order: 0;
+                flex: 0 0 20%;
+            }
+
+            &:nth-child(even) {
+                .us__process__step--icon {
+                    order: 1;
+                    @include m.desktop {
+                        order: 0;
+                    }
+                }
+
+                .us__process__step--info {
+                    order: 0;
+                    @include m.desktop {
+                        order: 1;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+    &__content {
+        background-color: var(--colorBackground2);
+        padding: v.$spaceSmall;
+        border-radius: v.$spaceSmall;
+
+        &__title {
+            margin-bottom: v.$spaceSmall;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: v.$spaceSmall;
+            padding: v.$spaceTiny;
+
+            @include m.tablet {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: v.$spaceSmall;
+            color: var(--colorText);
+            font-weight: v.$fontWeightRegular;
+
+            &--icon {
+                color: var(--colorHoverSecondary);
+                font-size: 2rem;
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.material-symbols-rounded {
+    font-size: 4.5rem;
+    color: var(--colorHoverSecondary);
+    margin: 0 auto;
+    text-align: center;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+
+    &:hover {
+        transform: scale(1.1);
+        color: var(--colorHover);
+    }
+}

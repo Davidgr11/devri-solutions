@@ -1,0 +1,7 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+// Buttons
+.btnPrimary {
+    @include m.btn(var(--colorHover), var(--colorBackground1));
+}

@@ -1,0 +1,149 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.services {
+    &__description {
+        margin-top: v.$spaceTiny;
+    }
+
+    &__subtitle {
+        margin: v.$spaceSmall 0;
+    }
+
+    &__carousel-container {
+        position: relative;
+        overflow: hidden;
+        padding: 0 6rem; // espacio para los botones laterales
+    }
+
+    &__carouselBtn,
+    &__carouselBtn2 {
+        background: none;
+        border: none;
+        color: var(--colorText1);
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+
+        .material-symbols-rounded {
+            font-size: 4rem;
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+
+            &:hover {
+                transform: scale(1.1);
+                color: var(--colorHover);
+            }
+        }
+
+        &--prev,
+        &--prev2 {
+            left: 1rem;
+        }
+
+        &--next,
+        &--next2 {
+            right: 1rem;
+        }
+    }
+
+    &__carousel,
+    &__carousel2 {
+        display: flex;
+        gap: v.$spaceSmall;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 100%;
+
+
+        .service {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            width: 100%;
+            max-width: 33rem;
+            min-height: 25rem; // alto
+            border-radius: v.$spaceSmall;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0;
+
+            &__image {
+                width: 100%;
+                height: 16rem;
+                object-fit: cover;
+                border-radius: 2rem 2rem 0 0;
+                padding: unset;
+            }
+            &__info {
+                padding: v.$spaceSmall;
+                display: flex;
+                flex-direction: column;
+                gap: v.$spaceSmall;
+            }
+
+
+            &--software {
+                border: 0.2rem solid var(--colorHover);
+                text-align: center;
+
+                .service__title {
+                    color: var(--colorHover);
+                    text-align: center;
+                }
+
+                .service__description {
+                    font-style: v.$fontStyleSecondary;
+                }
+
+                &:hover {
+                    border: 0.4rem solid var(--colorHover);
+                    font-weight: v.$fontWeightBold;
+                }
+
+                .service__button {
+                    @include m.btn(var(--colorHover), var(--colorBackground1));
+                }
+            }
+
+            &--marketing {
+                border: 0.2rem solid var(--colorHoverSecondary);
+                text-align: center;
+
+                .service__title {
+                    color: var(--colorHoverSecondary);
+                    text-align: center;
+                }
+
+                .service__description {
+                    font-style: v.$fontStyleSecondary;
+                    text-align: center;
+                }
+
+                &:hover {
+                    border: 0.4rem solid var(--colorHoverSecondary);
+                    font-weight: v.$fontWeightBold;
+                }
+                .service__button {
+                    @include m.btn(var(--colorHoverSecondary), var(--colorBackground1));
+                }
+
+            }
+        }
+
+        @include m.tablet {
+            .service {
+                flex: 0 0 47%;
+            }
+        }
+
+        @include m.desktop {
+            .service {
+                flex: 0 0 33%;
+            }
+        }
+    }
+}

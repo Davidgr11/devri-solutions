@@ -1,0 +1,144 @@
+[
+    {
+        "id": "landing",
+        "nombre": "Paquete Especial Básico",
+        "subtitulo": "Todo para darte a conocer y atraer clientes",
+        "horas": 40,
+        "precioHora": 250,
+        "incluye": [
+            "Diseño de marca para obtener identidad visual.",
+            "1 Website informativo para lograr presencia digital.",
+            "1 Landing Page para atraer clientes",
+            "1 Automatización para mejorar productividad."
+        ]
+    },
+    {
+        "id": "landing",
+        "nombre": "Paquete Especial Completo",
+        "subtitulo": "Todo para darte a conocer y atraer clientes",
+        "horas": 80,
+        "precioHora": 250,
+        "incluye": [
+            "Diseño de marca para obtener identidad visual.",
+            "Estrategia de redes sociales para conectar con tu audiencia.",
+            "1 Website informativo para lograr presencia digital.",
+            "1 Ecommerce o Web App para que tu operación fluya efectivamente.",
+            "2 Landing Page para atraer clientes"
+        ]
+    },
+    {
+        "id": "landing",
+        "nombre": "Landing Page",
+        "subtitulo": "Convierte visitantes en clientes",
+        "horas": 7,
+        "precioHora": 250,
+        "incluye": [
+            "Copywriting optimizado y persuasivo con enfoque en conversión.",
+            "Conexión a formulario o CRM.",
+            "Diseño personalizado y responsivo.",
+            "Certificado SSL."
+        ]
+    },
+    {
+        "id": "website",
+        "nombre": "Sitio Web",
+        "subtitulo": "Obtén presencia digital sólida y profesional",
+        "horas": 20,
+        "precioHora": 250,
+        "incluye": [
+            "Múltiples secciones informativas.",
+            "Dominio gratis por un año.",
+            "Certificado SSL.",
+            "Diseño personalizado y responsivo.",
+            "Conexión a formulario o CRM.",
+            "SEO básico."
+        ]
+    },
+    {
+        "id": "automatizacion",
+        "nombre": "Automatización",
+        "subtitulo": "Mejora productividad y optimiza procesos",
+        "horas": 20,
+        "precioHora": 250,
+        "incluye": [
+            "1 SPA, Widget, API o microservicio a la medida.",
+            "Certificado SSL",
+            "Diseño personalizado y responsivo"
+        ]
+    },
+    {
+        "id": "ecommerce",
+        "nombre": "Tienda en Línea",
+        "subtitulo": "Vende tus productos en línea",
+        "horas": 40,
+        "precioHora": 250,
+        "incluye": [
+            "Catálogo de productos.",
+            "Pasarela de pago con Mercado Pago.",
+            "Carrito de compras.",
+            "Panel de administración.",
+            "Diseño personalizado y responsivo.",
+            "Certificado SSL.",
+            "Dominio gratis por un año.",
+            "SEO básico."
+        ]
+    },
+    {
+        "id": "appweb",
+        "nombre": "App Web",
+        "subtitulo": "Soluciones a medida y escalables",
+        "horas": 40,
+        "precioHora": 250,
+        "incluye": [
+            "Autenticación de usuarios",
+            "Roles de usuarios",
+            "Dashboard de administración",
+            "Base de datos",
+            "Dominio gratis por un año.",
+            "Certificado SSL",
+            "Diseño personalizado y responsivo",
+            "Lógica de negocio integrada",
+            "Seguridad y protección de datos"
+        ]
+    },
+    {
+        "id": "branding",
+        "nombre": "Diseño de Marca",
+        "subtitulo": "Identidad visual única y profesional",
+        "horas": 7,
+        "precioHora": 250,
+        "incluye": [
+            "Logotipo en formatos PNG, SVG y PDF",
+            "Paleta de colores",
+            "Tipografías recomendadas",
+            "Manual de uso básico",
+            "Mockups de presentación"         
+        ]
+    },
+    {
+        "id": "redes",
+        "nombre": "Estrategia de Redes Sociales",
+        "subtitulo": "Conecta con tu audiencia",
+        "horas": 15,
+        "precioHora": 250,
+        "incluye": [
+            "Análisis de competencia y audiencia",
+            "Estrategia de publicaciones",
+            "Estrategia de calendarización",
+            "Métricas y KPI's",
+            "Contenido en redes por 2 semana"
+        ]
+    },
+    {
+        "id": "ads",
+        "nombre": "Publicidad Digital",
+        "subtitulo": "Campañas para crecer con intención",
+        "horas": 15,
+        "precioHora": 250,
+        "incluye": [
+            "Campañas en Meta y Google",
+            "Segmentación de clientes",
+            "Informe de resultados"
+        ]
+    }
+]

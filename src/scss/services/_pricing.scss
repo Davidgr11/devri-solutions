@@ -1,0 +1,144 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.pricing {
+    padding: 2rem;
+
+    // SUMMARY
+    &__summary {
+        background-color: var(--colorFooter);
+        color: var(--colorText1);
+        padding: v.$spaceSmall;
+        border-radius: v.$spaceSmall;
+        display: flex;
+        flex-direction: column;
+        gap: v.$spaceSmall;
+        margin: v.$spaceSmall 0;
+
+        @include m.tablet {
+            gap: v.$spaceRegular;
+        }
+
+        &-title {
+            display: inline-block;
+            padding-bottom: v.$spaceTiny;
+            border-bottom: 0.2rem solid var(--colorHover);
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: v.$spaceTiny;
+            align-items: center;
+
+            @include m.tablet {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: space-around;
+                column-gap: v.$spaceRegular;
+            }
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            font-weight: v.$fontWeightBold;
+
+            span {
+                margin: 0;
+                padding-right: v.$spaceTiny;
+            }
+
+            .material-symbols-rounded {
+                font-size: 3rem;
+                color: var(--colorHover);
+                font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+
+                &:hover {
+                    transform: scale(1.1);
+                    color: var(--colorHoverSecondary);
+                }
+            }
+        }
+
+        &-total {
+            font-weight: v.$fontWeightBold;
+            text-align: center;
+
+            span {
+                color: var(--colorHover);
+                display: inline-block;
+            }
+
+            @include m.tablet {
+                text-align: left;
+            }
+        }
+
+    }
+
+    // SERVICES
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: v.$spaceSmall;
+    }
+
+    &__service {
+        border: 0.2rem solid var(--colorHover);
+        padding: v.$spaceSmall;
+        border-radius: v.$spaceSmall;
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: v.$spaceTiny;
+        justify-content: flex-start !important;
+
+        @include m.tablet {
+            gap: v.$spaceSmall;
+        }
+
+        &-benefit {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: v.$spaceTiny;
+
+            .material-symbols-rounded {
+                font-size: 2rem;
+                margin: 0;
+                color: var(--colorHover);
+                font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+
+                &:hover {
+                    transform: scale(1.1);
+                    color: var(--colorHoverSecondary);
+                }
+            }
+        }
+        &-subtitle {
+            color: var(--colorBackground2);
+        }
+        &-select-btn {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            background: var(--colorHover);
+            color: var(--colorBackground1);
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &.is-selected {
+                background-color: var(--colorHoverSecondary);
+            }
+        }
+
+    }
+
+}
+
+//btn.innerHTML = '✅ Seleccionado';

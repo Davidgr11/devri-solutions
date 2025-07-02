@@ -1,0 +1,177 @@
+{
+  "landing": {
+    "titulo": "Landing Page",
+    "subtitulo": "Diseñamos páginas de aterrizaje que convierten visitantes en clientes.",
+    "infoTitle": "¿Qué es una Landing Page?",
+    "infoText": "Una Landing Page es una página web diseñada específicamente para convertir visitantes en clientes potenciales. Su objetivo principal es guiar al usuario hacia una acción específica, como registrarse, descargar un recurso o realizar una compra.",
+    "infoImg": "/build/assets/img/services2/landing.avif",
+    "infoTitle2": "¿Para qué usos es ideal?",
+    "useCases": [
+      "Para lanzar un nuevo producto o servicio al mercado.",
+      "Para campañas de marketing, como promociones o descuentos.",
+      "Para registrar interesados en un evento, webinar o programa.",
+      "Para registrar usuarios en un boletín informativo.",
+      "Para que clientes potenciales prueben o descarguen algún producto.",
+      "Para que los usuarios se registren en una lista de espera."
+    ],
+    "data": [
+      {"number": "+300%", "text": "más conversiones cuando existe una landing page con un solo objetivo claro."},
+      {"number": "48%", "text": "de campañas fallan por no usar una landing page dedicada."},
+      {"number": "–50%", "text": "en costos por adquisición con una landing bien optimizada."}
+    ]
+  },
+
+  "website": {
+    "titulo": "Sitios Web",
+    "subtitulo": "Creamos sitios web modernos, rápidos y optimizados para tu negocio.",
+    "infoTitle": "¿Qué es un Sitio Web Profesional?",
+    "infoText": "Un sitio web es la base digital de tu negocio. Es una herramienta clave para comunicar tu propuesta de valor, generar confianza y ofrecer contenido útil a tus usuarios.",
+    "infoImg": "/build/assets/img/services2/website.avif",
+    "infoTitle2": "¿Para qué usos es ideal?",
+    "useCases": [
+      "Para presentar tu negocio en línea con credibilidad.",
+      "Para mejorar la imagen profesional de tu marca.",
+      "Para mostrar productos, servicios y testimonios.",
+      "Para posicionarte orgánicamente en buscadores (SEO).",
+      "Para integrar funcionalidades como blogs, formularios o chat.",
+      "Para establecer presencia 24/7 sin depender de redes sociales."
+    ],
+    "data": [
+      {"number": "94%", "text": "de primeras impresiones están relacionadas con el diseño web."},
+      {"number": "75%", "text": "de usuarios juzgan la credibilidad de una empresa por su sitio web."},
+      {"number": "53%", "text": "de los usuarios abandonan un sitio si tarda más de 3 segundos en cargar."}
+    ]
+  },
+
+  "auto": {
+    "titulo": "Automatizaciones (SPAs, Widgets, APIs)",
+    "subtitulo": "Desarrollamos soluciones interactivas, modulares y automatizadas que elevan la experiencia digital.",
+    "infoTitle": "¿Qué son las Automatizaciones Digitales?",
+    "infoText": "Son herramientas y procesos que permiten que tu sistema trabaje por ti. Desde SPAs hasta microservicios y APIs, automatizamos tareas para mejorar eficiencia y escalabilidad.",
+    "infoImg": "/build/assets/img/services2/auto.avif",
+    "infoTitle2": "¿Para qué usos es ideal?",
+    "useCases": [
+      "Para construir aplicaciones de una sola página (SPA) con carga dinámica.",
+      "Para integrar widgets personalizados en sitios existentes.",
+      "Para automatizar formularios, correos o procesos de negocio.",
+      "Para conectar bases de datos o CRMs a través de APIs.",
+      "Para mejorar tiempos de respuesta y reducir errores humanos.",
+      "Para escalar sin contratar más personal."
+    ],
+    "data": [
+      {"number": "30%", "text": "de las tareas en empresas pueden automatizarse con tecnología actual."},
+      {"number": "10x", "text": "más rápido escalar operaciones con APIs bien diseñadas."},
+      {"number": "70%", "text": "menos errores cuando se automatizan flujos repetitivos."}
+    ]
+  },
+
+  "ecommerce": {
+    "titulo": "Tiendas en Línea",
+    "subtitulo": "Creamos eCommerce funcionales, atractivos y enfocados en conversión.",
+    "infoTitle": "¿Qué es una Tienda en Línea Profesional?",
+    "infoText": "Es una plataforma digital que permite vender productos o servicios directamente al consumidor con experiencia optimizada, pasarelas de pago seguras y diseño adaptable.",
+    "infoImg": "/build/assets/img/services2/ecommerce.avif",
+    "infoTitle2": "¿Para qué usos es ideal?",
+    "useCases": [
+      "Para vender productos físicos o digitales en línea.",
+      "Para manejar inventario, pagos y envíos desde una sola plataforma.",
+      "Para lanzar una marca sin tienda física.",
+      "Para expandir tu mercado fuera de tu ciudad o país.",
+      "Para integrar medios de pago como PayPal o Stripe.",
+      "Para vincular redes sociales a tu tienda (Facebook, Instagram Shopping)."
+    ],
+    "data": [
+      {"number": "22%", "text": "de las ventas minoristas ya se hacen en línea."},
+      {"number": "80%", "text": "de usuarios abandonan una tienda si no es responsiva."},
+      {"number": "35%", "text": "más retención con tiendas optimizadas para móvil."}
+    ]
+  },
+
+  "webApp": {
+    "titulo": "Aplicaciones Web",
+    "subtitulo": "Desarrollamos sistemas web a medida para tu negocio o startup.",
+    "infoTitle": "¿Qué es una Aplicación Web?",
+    "infoText": "Es una plataforma digital interactiva que funciona desde el navegador y permite a los usuarios realizar tareas avanzadas como registros, análisis, gestión de datos o procesos internos.",
+    "infoImg": "/build/assets/img/services2/webApp.avif",
+    "infoTitle2": "¿Para qué usos es ideal?",
+    "useCases": [
+      "Para gestionar procesos internos de tu negocio.",
+      "Para crear plataformas tipo SaaS o marketplaces.",
+      "Para reemplazar hojas de cálculo con herramientas interactivas.",
+      "Para permitir acceso seguro a usuarios con cuentas.",
+      "Para ofrecer dashboards o paneles de control en tiempo real.",
+      "Para construir MVPs o prototipos funcionales para inversores."
+    ],
+    "data": [
+      {"number": "67%", "text": "de las startups exitosas construyen un MVP con tecnología web."},
+      {"number": "4x", "text": "más rápido lanzar una app web que una app nativa completa."},
+      {"number": "90%", "text": "de las funciones empresariales pueden operar desde una app web."}
+    ]
+  },
+
+  "branding": {
+    "titulo": "Diseño e Identidad de Marca",
+    "subtitulo": "Creamos marcas memorables, coherentes y con personalidad propia.",
+    "infoTitle": "¿Qué es una Identidad de Marca?",
+    "infoText": "Es la representación visual, verbal y emocional de tu empresa. Una identidad sólida transmite confianza, profesionalismo y propósito.",
+    "infoImg": "/build/assets/img/services2/branding.avif",
+    "infoTitle2": "¿Para qué usos es ideal?",
+    "useCases": [
+      "Para lanzar una nueva marca desde cero.",
+      "Para rediseñar una imagen que ya no refleja tus valores.",
+      "Para transmitir profesionalismo y coherencia visual.",
+      "Para destacar frente a la competencia.",
+      "Para crear activos como logotipo, paleta, tipografía, etc.",
+      "Para asegurar consistencia en redes sociales, web y presentaciones."
+    ],
+    "data": [
+      {"number": "3x", "text": "más reconocimiento tienen las marcas con una identidad visual coherente."},
+      {"number": "90%", "text": "de consumidores esperan una experiencia visual consistente."},
+      {"number": "7 segundos", "text": "basta para que un usuario forme una impresión de tu marca."}
+    ]
+  },
+
+  "socialMedia": {
+    "titulo": "Gestión de Redes Sociales",
+    "subtitulo": "Creamos contenido que conecta y construimos comunidad en torno a tu marca.",
+    "infoTitle": "¿Qué es la Gestión de Redes Sociales?",
+    "infoText": "Es el proceso de crear, programar y analizar contenido en redes como Instagram, Facebook, LinkedIn y más, para construir relaciones con tu audiencia.",
+    "infoImg": "/build/assets/img/services2/socialMedia.avif",
+    "infoTitle2": "¿Para qué usos es ideal?",
+    "useCases": [
+      "Para crear contenido atractivo y consistente.",
+      "Para conectar con tu comunidad y responder mensajes.",
+      "Para aumentar seguidores y generar leads.",
+      "Para programar publicaciones y campañas.",
+      "Para analizar métricas y ajustar tu estrategia.",
+      "Para delegar la comunicación digital de tu marca."
+    ],
+    "data": [
+      {"number": "70%", "text": "de las marcas afirman que redes sociales aumentaron su visibilidad."},
+      {"number": "50%", "text": "de consumidores siguen a marcas para estar al día con lanzamientos."},
+      {"number": "80%", "text": "de los usuarios interactúan más con marcas activas en redes."}
+    ]
+  },
+
+  "ads": {
+    "titulo": "Publicidad Digital",
+    "subtitulo": "Diseñamos campañas que maximizan el alcance y el retorno de inversión.",
+    "infoTitle": "¿Qué es la Publicidad Digital?",
+    "infoText": "Es el uso de plataformas digitales para promocionar productos o servicios, segmentando audiencias y optimizando conversiones a través de anuncios pagados.",
+    "infoImg": "/build/assets/img/services2/ads.avif",
+    "infoTitle2": "¿Para qué usos es ideal?",
+    "useCases": [
+      "Para impulsar tráfico a tu sitio o landing.",
+      "Para aumentar ventas rápidamente.",
+      "Para captar leads calificados desde redes o Google.",
+      "Para promover eventos o lanzamientos.",
+      "Para testear productos o servicios nuevos.",
+      "Para posicionarte en buscadores frente a la competencia."
+    ],
+    "data": [
+      {"number": "200%", "text": "de retorno promedio en campañas bien segmentadas."},
+      {"number": "49%", "text": "de usuarios han hecho una compra influenciada por un anuncio en redes."},
+      {"number": "96%", "text": "de los anunciantes consideran Google Ads altamente efectivo."}
+    ]
+  }
+}

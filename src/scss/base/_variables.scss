@@ -1,0 +1,40 @@
+// SYSTEM DESIGN TOKENS
+
+// FONTS CONFIG
+$fontFamilyPrimary: "Nunito", sans-serif; // Primary font exported from Google Fonts
+$fontFamilySecondary: "Nunito", sans-serif; // Secondary or fallback font
+$fontWeightRegular: 400; // Regular font weight
+$fontWeightBold: 800; // Bold font weight
+$fontStylePrimary: normal; // Font style
+$fontStyleSecondary: italic; // Font style
+
+
+// BRAND AND SITE COLORIMETRY SETUP
+$colorPrimary:#7fed4cf8; // Primary brand color
+$colorPrimaryAux:#27c008f8; // Primary brand color
+$colorSecondaryAux: #951cff; // Secondary brand color
+$colorSecondary: #be7dff; // Secondary brand color
+$colorTertiary: #f7e9b8; // Tertiary brand color
+$colorTertiaryAux: #ceb318; // Tertiary brand color
+$colorPastel1: #b1ff9df8;
+$colorPastel2: #e8bdfff8;
+
+$colorDark: black; // For text or background depending on the context (light or dark)
+$colorLight: white; // For text or background depending on the context (light or dark)
+$colorTrasparentDark: rgba(0, 0, 0, 0.8);
+$colorTrasparentLight: rgba(238, 237, 240, 0.9); // Transparent color for overlays or backgrounds
+$colorDarkAux: #1b4900b2; // Auxiliary color for text or background
+$colorLightAux: #e1d5f0; // Auxiliary color for text or background
+
+
+// DEVICES SCREEN SIZES
+$mobile:480px;
+$tablet:768px;
+$desktop:1024px;
+
+
+// SPACING SIZE FOR MARGINS, PADDINGS AND GAPS
+$spaceBig: 10rem;
+$spaceRegular: 5rem;
+$spaceSmall: 2.5rem;
+$spaceTiny: 1rem;

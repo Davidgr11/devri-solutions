@@ -1,0 +1,124 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.reviews {
+    &__title {
+        margin: v.$spaceBig 0 v.$spaceSmall 0;
+    }
+
+    &__carousel-container {
+        position: relative;
+        overflow: hidden;
+        padding: 0 6rem; // espacio para los botones laterales
+    }
+
+    &__carouselBtn,
+    &__carouselBtn2 {
+        background: none;
+        border: none;
+        color: var(--colorText1);
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+
+        .material-symbols-rounded {
+            font-size: 4rem;
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+
+            &:hover {
+                transform: scale(1.1);
+                color: var(--colorHover);
+            }
+        }
+
+        &--prev {
+            left: 1rem;
+        }
+
+        &--next {
+            right: 1rem;
+        }
+    }
+
+    &__carousel {
+        display: flex;
+        gap: v.$spaceSmall;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 100%;
+
+
+        .review {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            width: 100%;
+            max-width: 33rem;
+            min-height: 25rem; // alto
+            border-radius: v.$spaceSmall;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 0;
+            border: 0.2rem solid var(--colorHover);
+
+            &__info {
+                padding: v.$spaceSmall;
+                display: flex;
+                flex-direction: column;
+                gap: v.$spaceSmall;
+            }
+
+            &__stars {
+                display: flex;
+                justify-content: center;
+
+                .material-symbols-rounded {
+                    font-size: 3rem;
+                    color: var(--colorHover);
+                }
+            }
+
+            &__rol {
+                font-style: v.$fontStyleSecondary;
+                font-weight: v.$fontWeightBold;
+                color: var(--colorBackground2);
+            }
+
+
+            &__image {
+                width: 90%;
+                margin: 0 auto;
+                height: 16rem;
+                object-fit: cover;
+                border-radius: v.$spaceBig;
+                padding: unset;
+
+                @include m.mobile {
+                    width: 60%;
+                }
+            }
+
+            &:hover {
+                border: 0.4rem solid var(--colorHover);
+                font-weight: v.$fontWeightBold;
+            }
+        }
+
+        @include m.tablet {
+            .service {
+                flex: 0 0 47%;
+            }
+        }
+
+        @include m.desktop {
+            .service {
+                flex: 0 0 33%;
+            }
+        }
+    }
+}

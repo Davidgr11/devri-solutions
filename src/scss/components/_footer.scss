@@ -1,0 +1,111 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.footer {
+    margin-top: v.$spaceBig;
+    background-color: var(--colorFooter);
+    border-radius: v.$spaceSmall v.$spaceSmall 0 0;
+    color: var(--colorBackground1);
+
+    &__container {
+        padding: v.$spaceSmall;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: v.$spaceSmall;
+
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: v.$spaceSmall;
+            align-items: start;
+        }
+    }
+    &__general {
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: v.$spaceTiny;
+        color: var(--colorText1);
+
+        @include m.tablet{
+            align-items: start;
+            text-align: left;
+        }
+
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--img {
+            width: 7rem;
+            height: auto;
+        }
+        &--text{
+            font-size: 5rem;
+        }
+    }
+    &__copy {
+        font-weight: v.$fontWeightBold;
+        text-align: center;
+        color: var(--colorText1);
+        padding: 0 v.$spaceSmall v.$spaceSmall v.$spaceSmall;
+
+        @include m.tablet{
+            padding: v.$spaceSmall;
+        }
+    }
+    &__information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: v.$spaceSmall;
+
+        @include m.tablet{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+    &__block {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: v.$spaceTiny;
+        color: var(--colorText1);
+
+        @include m.tablet{
+            text-align: left;
+            align-items: start;
+            justify-content: start;
+        }
+
+        &--title{
+            border-bottom: 0.4rem solid var(--colorHover);
+            display: inline;
+            text-align: center;
+        }
+        &--list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: v.$spaceTiny;
+
+            @include m.tablet{
+                align-items: start;
+            }
+            a {
+                &:hover {
+                    color: var(--colorHover);
+                    font-weight: v.$fontWeightBold;
+                }
+            }
+        }
+    }
+}

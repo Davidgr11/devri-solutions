@@ -1,0 +1,274 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.mobile {
+    // General
+    background-color: var(--colorTrasparent);
+    color: var(--colorText1);
+    transition: right 0.3s ease-in-out;
+
+    // Position and Size
+    position: fixed;
+    top: 0;
+    right: -100%; // Start hidden
+    width: 65%; // width of the menu
+    height: 100vh; // all the viewport height
+    padding: 1rem;
+    z-index: 10010;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--colorText1) var(--colorTrasparent);
+
+    @include m.mobile {
+        width: 55%;
+    }
+
+    // Show when active
+    &.openMenu {
+        right: 0;
+    }
+
+    &__theme-toggle {
+        position: absolute;
+        top: 1rem;
+        left: v.$spaceSmall;
+        display: flex;
+        align-items: center;
+        height: 4rem; // Igual que el botón close
+        z-index: 1000;
+        gap: 1rem;
+
+        .material-symbols-rounded {
+            font-size: 3rem;
+            color: var(--colorText1); // o usa v.$colorTertiaryAux si prefieres
+        }
+
+        #theme-icon {
+            font-size: 2.2rem;
+            color: v.$colorTertiaryAux;
+            line-height: 1; // para evitar que empuje verticalmente
+        }
+
+        input[type='checkbox'] {
+            display: none;
+
+            &:checked+.switch {
+                //background-color: var(--colorHover);
+
+                &::before {
+                    transform: translateX(2.4rem);
+                }
+            }
+        }
+
+        .switch {
+            width: 5rem;
+            height: 2.6rem;
+            background-color: v.$colorTertiary;
+            border-radius: 9999px;
+            position: relative;
+            transition: background-color 0.3s;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0.2rem;
+                left: 0.2rem;
+                width: 2.2rem;
+                height: 2.2rem;
+                background-color: v.$colorTertiaryAux;
+                border-radius: 50%;
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+
+    // X Button
+    &__close {
+        position: absolute;
+        top: 1rem;
+        right: v.$spaceSmall;
+        background: none;
+        height: 4rem;
+        width: 4rem;
+        border: none;
+        cursor: pointer;
+        color: var(--colorText1);
+        cursor: pointer;
+
+        .material-symbols-rounded {
+            font-size: 4rem;
+
+            &:hover {
+                transform: scale(1.1);
+                color: var(--colorHover);
+            }
+        }
+    }
+
+    // List
+    &__list {
+        margin-top: 7rem;
+        margin-left: v.$spaceSmall;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: v.$spaceSmall;
+
+    }
+
+    // Items of the list
+    &__link {
+        display: inline-block;
+        color: var(--colorText1);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: v.$fontWeightBold;
+
+        &:hover {
+            border-bottom: 0.4rem solid var(--colorHover);
+        }
+
+        &.active {
+            border-bottom: 0.4rem solid var(--colorHover);
+        }
+
+    }
+
+    // Dropdown
+    &__dropdown {
+
+        &--btn {
+            display: flex;
+            gap: v.$spaceTiny;
+            align-items: center;
+            justify-content: space-between;
+            background: none;
+            border: none;
+            color: var(--colorText1);
+            cursor: pointer;
+
+            .material-symbols-rounded {
+                transition: transform 0.3s ease-in-out;
+                color: var(--colorHover);
+                font-size: 2rem;
+                margin-bottom: 0.3rem;
+
+                &.rotateDrop {
+                    transform: rotate(180deg);
+                    color: var(--colorHoverSecondary);
+                }
+            }
+        }
+    }
+
+    &__submenu {
+        display: none;
+        flex-direction: column;
+        gap: v.$spaceTiny;
+        padding-left: v.$spaceTiny;
+        margin-top: v.$spaceTiny;
+        width: 100%;
+
+        &.openSubmenu {
+            display: flex; // Show when active
+        }
+
+    }
+
+    // Dropdown
+    &__dropdown2 {
+
+        &--btn2 {
+            display: flex;
+            gap: v.$spaceTiny;
+            align-items: center;
+            justify-content: space-between;
+            background: none;
+            border: none;
+            color: var(--colorText1);
+            cursor: pointer;
+
+            .material-symbols-rounded {
+                transition: transform 0.3s ease-in-out;
+                color: var(--colorHover);
+                font-size: 2rem;
+                margin-bottom: 0.3rem;
+
+                &.rotateDrop {
+                    transform: rotate(180deg);
+                    color: var(--colorHoverSecondary);
+                }
+            }
+        }
+    }
+
+    &__submenu2 {
+        display: none;
+        flex-direction: column;
+        gap: v.$spaceTiny;
+        padding-left: v.$spaceSmall;
+        margin-top: v.$spaceTiny;
+        width: 100%;
+
+        &.openSubmenu {
+            display: flex; // Show when active
+        }
+    }
+
+    // Dropdown
+    &__dropdown3 {
+
+        &--btn3 {
+            display: flex;
+            gap: v.$spaceTiny;
+            align-items: center;
+            justify-content: space-between;
+            background: none;
+            border: none;
+            color: var(--colorText1);
+            cursor: pointer;
+
+            .material-symbols-rounded {
+                transition: transform 0.3s ease-in-out;
+                color: var(--colorHover);
+                font-size: 2rem;
+                margin-bottom: 0.3rem;
+
+                &.rotateDrop {
+                    transform: rotate(180deg);
+                    color: var(--colorHoverSecondary);
+                }
+            }
+        }
+    }
+
+    &__submenu3 {
+        display: none;
+        flex-direction: column;
+        gap: v.$spaceTiny;
+        padding-left: v.$spaceSmall;
+        margin-top: v.$spaceTiny;
+        width: 100%;
+
+        &.openSubmenu {
+            display: flex; // Show when active
+        }
+    }
+
+
+    &__option a {
+        color: var(--colorHover);
+
+        &:hover {
+            color: var(--colorHoverSecondary);
+            transform: scale(1.1) !important;
+        }
+    }
+
+    @include m.tablet {
+        display: none;
+    }
+}

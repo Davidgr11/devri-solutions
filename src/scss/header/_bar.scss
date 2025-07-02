@@ -1,0 +1,66 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.bar {
+    // General
+    background-color: var(--colorTrasparent);
+    // Sizes
+    height: 6rem;
+    width: 100%;
+    padding: 0 v.$spaceSmall;
+    // Position and Display
+    position: fixed;
+    top:0;
+    z-index: 1100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include m.tablet {
+        padding: 0 v.$spaceRegular;
+    }
+
+    // Logo and Title
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &--img {
+            height: 5rem;
+            width: auto;
+        }
+
+        &--text {
+            font-size: 3rem;
+        }
+    }
+
+    // Burger Menu
+    &__burgerMenu {
+        // General
+        background: none;
+        border: none;
+        color: var(--colorText1);
+        cursor: pointer;
+
+        // Size and Position
+        height: 5rem;
+        z-index: 1001;
+
+        // Icon details
+        .material-symbols-rounded {
+            padding-top: 0.35rem;
+            font-size: 4rem;
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+
+            &:hover {
+                transform: scale(1.1);
+                color: var(--colorHover);
+            }
+        }
+
+        @include m.tablet {
+            display: none;
+        }
+    }
+}

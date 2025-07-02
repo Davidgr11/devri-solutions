@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <!--TITLE-->
+    <title>Devri Solutions</title>
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="DEVRI SAPI DE CV">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="build/assets/icons/devri-logo-light.svg">
+    <!--FONTS & ICONS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <!--PAGE RELATIONS-->
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="bar">
+            <!--Logo and Title-->
+            <a href="/" class="bar__logo">
+                <img src="build/assets/icons/devri-logo-dark.svg" alt="Devri Solutions Logo" class="bar__logo--img">
+                <p class="bar__logo--text">DEVRI</p>
+            </a>
+
+            <!--Navigation-->
+            <button class="bar__burgerMenu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+            <nav class="desktop">
+
+                <ul class="desktop__list">
+                    <li class="desktop__item">
+                        <div class="desktop__theme-toggle">
+                            <span class="material-symbols-rounded theme-icon">light_mode</span>
+                            <input type="checkbox" id="desktop-theme-toggle" />
+                            <label for="desktop-theme-toggle" class="switch"></label>
+                        </div>
+                    </li>
+                    <li><a href="/" class="desktop__link active">Inicio</a></li>
+
+                    <li class="desktop__dropdown">
+                        <button class="desktop__link desktop__dropdown--btn" aria-expanded="false">
+                            Servicios
+                            <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                        </button>
+                        <ul class="desktop__submenu">
+                            <li class="desktop__dropdown2">
+                                <button class="desktop__link desktop__dropdown2--btn2" aria-expanded="false">
+                                    SOFTWARE
+                                    <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                                </button>
+                                <ul class="desktop__submenu2">
+                                    <li class="desktop__option"><a href="/landing-pages">Landing Pages</a>
+                                    </li>
+                                    <li class="desktop__option"><a href="/sitios-web">Sitios Web</a></li>
+                                    <li class="desktop__option"><a href="/automatizaciones">Automatizaciones</a>
+                                    </li>
+                                    <li class="desktop__option"><a href="/tiendas-en-linea">Tiendas en
+                                            Línea</a></li>
+                                    <li class="desktop__option"><a href="/aplicaciones-web">Aplicaciones Web</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="desktop__dropdown3">
+                                <button class="desktop__link desktop__dropdown3--btn3" aria-expanded="false">
+                                    MARKETING
+                                    <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                                </button>
+                                <ul class="desktop__submenu3">
+                                    <li class="desktop__option"><a href="/diseño-marca">Diseño de
+                                            Marcas</a></li>
+                                    <li class="desktop__option"><a href="/redes-sociales">Gestión de
+                                            Redes</a></li>
+                                    <li class="desktop__option"><a href="/publicidad">Publicidad</a></li>
+                                </ul>
+                            </li>
+                            <!--<li><a href="servicio2.html">Marketing</a></li>-->
+                        </ul>
+                    </li>
+
+                    <li class="desktop__item"><a href="/proyectos" class="desktop__link">PROYECTOS</a></li>
+                    <li class="desktop__item"><a href="/cotizar" class="desktop__link">COTIZAR</a></li>
+                    <li class="desktop__item"><a href="/servicios" class="desktop__link">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="mobile" aria-hidden="true">
+            <div class="mobile__theme-toggle">
+                <span class="material-symbols-rounded theme-icon">light_mode</span>
+                <input type="checkbox" id="theme-toggle" />
+                <label for="theme-toggle" class="switch"></label>
+            </div>
+
+            <!--Close Button-->
+            <button class="mobile__close" aria-label="Cerrar menú">
+                <span class="material-symbols-rounded">close</span>
+            </button>
+
+            <!--Navigation Links-->
+            <ul class="mobile__list">
+                <li><a href="/" class="mobile__link active">Inicio</a></li>
+
+                <li class="mobile__dropdown">
+                    <button class="mobile__link mobile__dropdown--btn" aria-expanded="false">
+                        Servicios
+                        <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                    </button>
+                    <ul class="mobile__submenu">
+                        <li class="mobile__dropdown2">
+                            <button class="mobile__link mobile__dropdown2--btn2" aria-expanded="false">
+                                SOFTWARE
+                                <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                            </button>
+                            <ul class="mobile__submenu2">
+                                <li class="mobile__option"><a href="/landing-pages">Landing Pages</a></li>
+                                <li class="mobile__option"><a href="/sitios-web">Sitios Web</a></li>
+                                <li class="mobile__option"><a href="/automatizaciones">Automatizaciones</a></li>
+                                <li class="mobile__option"><a href="/tiendas-en-linea">Tiendas en Línea</a>
+                                </li>
+                                <li class="mobile__option"><a href="/aplicaciones-web">Aplicaciones Web</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile__dropdown3">
+                            <button class="mobile__link mobile__dropdown3--btn3" aria-expanded="false">
+                                MARKETING
+                                <span class="material-symbols-rounded">arrow_drop_down_circle</span>
+                            </button>
+                            <ul class="mobile__submenu3">
+                                <li class="mobile__option"><a href="/diseño-marca">Diseño de Marcas</a>
+                                </li>
+                                <li class="mobile__option"><a href="/redes-sociales">Gestión de Redes</a>
+                                </li>
+                                <li class="mobile__option"><a href="/publicidad">Publicidad</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a href="servicio2.html">Marketing</a></li>-->
+                    </ul>
+                </li>
+
+                <li class="mobile__item"><a href="/proyectos" class="mobile__link">PROYECTOS</a></li>
+                <li class="mobile__item"><a href="/cotizar" class="mobile__link">COTIZAR</a></li>
+                <li class="mobile__item"><a href="/servicios" class="mobile__link">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero blockWidth">
+            <h1 class="hero__title">Haz que tu marca deje huella en el mundo digital</h1>
+            <h3 class="hero__subtitle">Agencia de innovación y transformación digital</h3>
+            <p class="hero__description">Transformamos tus ideas en herramientas que optimizan tu productividad y
+                consolidan tu marca en el mundo digital.</p>
+            <div class="hero__buttons">
+                <a href="#comienza" class="hero__button hero__button--primary btnPrimary">Empieza Hoy</a>
+            </div>
+    </header>
+
+    <!--PARTNERS-->
+    <aside class="logo-slider" id="comienza">
+        <div class="slide-track" id="slide-track">
+            <div class="slide"><img src="build/assets/img/Partner1.avif" lazyalt="Cliente 1" loading="lazy"
+                    decoding="async"></div>
+            <div class="slide"><img src="build/assets/img/Partner2.avif" lazyalt="Cliente 2" loading="lazy"
+                    decoding="async"></div>
+            <div class="slide"><img src="build/assets/img/Partner3.avif" lazyalt="Cliente 3" loading="lazy"
+                    decoding="async"></div>
+            <div class="slide"><img src="build/assets/img/Partner4.avif" lazyalt="Cliente 4" loading="lazy"
+                    decoding="async"></div>
+            <div class="slide"><img src="build/assets/img/Partner5.avif" lazyalt="Cliente 5" loading="lazy"
+                    decoding="async"></div>
+            <div class="slide"><img src="build/assets/img/Partner6.avif" lazyalt="Cliente 6" loading="lazy"
+                    decoding="async"></div>
+            <div class="slide"><img src="build/assets/img/Partner7.avif" lazyalt="Cliente 7" loading="lazy"
+                    decoding="async"></div>
+            <div class="slide"><img src="build/assets/img/Partner8.avif" lazyalt="Cliente 8" loading="lazy"
+                    decoding="async"></div>
+            <div class="slide"><img src="build/assets/img/Partner9.avif" lazyalt="Cliente 9" loading="lazy"
+                    decoding="async"></div>
+            <div class="slide"><img src="build/assets/img/Partner10.avif" lazyalt="Cliente 10"></div>
+        </div>
+    </aside>
+
+    <!--SERVICES-->
+    <section class="services block">
+        <h2 class="services__title">Nuestros Servicios</h2>
+        <p class="services__description">Creamos soluciones digitales para impulsar cada etapa de tu negocio o marca.
+        </p>
+        <h3 class="services__subtitle">Desarrollo de software</h3>
+
+        <div class="services__carousel-container">
+            <button class="services__carouselBtn services__carouselBtn--prev" aria-label="Anterior">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+
+            <!--Software-->
+            <div class="services__carousel">
+                <div class="service service--software">
+                    <img class="service__image" src="build/assets/img/services/serviceS1.avif" lazyalt="serviceS1"
+                        loading="lazy" decoding="async">
+                    <div class="service__info">
+                        <h4 class="service__title">Landing Page</h4>
+                        <p class="service__description">Convierte visitantes en próximos clientes.</p>
+                        <a href="servicios.html?id=landing" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--software">
+                    <img class="service__image" src="build/assets/img/services/serviceS2.avif" lazyalt="serviceS2"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Sitio Web</h4>
+                        <p class="service__description">Aumenta tu presencia en el mundo digital.</p>
+                        <a href="servicios.html?id=website" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--software">
+                    <img class="service__image" src="build/assets/img/services/serviceS3.avif" lazyalt="serviceS3"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Automatización</h4>
+                        <p class="service__description">Facilita procesos con herramientas interactivas.</p>
+                        <a href="servicios.html?id=auto" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--software">
+                    <img class="service__image" src="build/assets/img/services/serviceS4.avif" lazyalt="serviceS4"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Tienda Virtual</h4>
+                        <p class="service__description">Comienza a verder tus productos online.</p>
+                        <a href="servicios.html?id=ecommerce" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--software">
+                    <img class="service__image" src="build/assets/img/services/serviceS5.avif" lazyalt="serviceS5"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Web App</h4>
+                        <p class="service__description">Soluciones a la medida para tu operación.</p>
+                        <a href="servicios.html?id=webApp" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="services__carouselBtn services__carouselBtn--next" aria-label="Siguiente">
+                <span class="material-symbols-rounded">chevron_right</span>
+            </button>
+        </div>
+
+        <!--Marketing-->
+        <h3 class="services__subtitle">Marketing digital</h3>
+        <div class="services__carousel-container">
+            <button class="services__carouselBtn services__carouselBtn--prev2" aria-label="Anterior">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+
+            <div class="services__carousel2">
+                <div class="service service--marketing">
+                    <img class="service__image" src="build/assets/img/services/serviceM1.avif" lazyalt="serviceM1"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Diseño de Marca</h4>
+                        <p class="service__description">Crea una marca que deje huella.</p>
+                        <a href="servicios.html?id=branding" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--marketing">
+                    <img class="service__image" src="build/assets/img/services/serviceM2.avif" lazyalt="serviceM2"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Redes Sociales</h4>
+                        <p class="service__description">Genera confianza en redes sociales.</p>
+                        <a href="servicios.html?id=socialMedia" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--marketing">
+                    <img class="service__image" src="build/assets/img/services/serviceM3.avif" lazyalt="serviceM3"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Publicidad Digital</h4>
+                        <p class="service__description">Llega a tus clientes deseados.</p>
+                        <a href="servicios.html?id=ads" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="services__carouselBtn services__carouselBtn--next2" aria-label="Siguiente">
+                <span class="material-symbols-rounded">chevron_right</span>
+            </button>
+        </div>
+    </section>
+
+    <!--ABOUT US-->
+    <main class="us block">
+        <div class="us__container">
+            <!--Statistics-->
+            <div class="us stats">
+                <h2 class="us__stats__title">Expertos en Innovación</h2>
+                <div class="us__stats__divider">
+                    <div class="us__stats__list">
+                        <div class="us__stat">
+                            <p class="us__stat--number">30+ Proyectos</p>
+                            <p class="us__stat--text">desarrollados exitosamente, con clientes satisfechos.</p>
+                        </div>
+                        <div class="us__stat">
+                            <p class="us__stat--number">5+ Sectores</p>
+                            <p class="us__stat--text">atendidos: Educación, Finanzas, Retail, Gastronomía,
+                                Entretenimineto.
+                            </p>
+                        </div>
+                        <div class="us__stat">
+                            <p class="us__stat--number">3+ Años</p>
+                            <p class="us__stat--text">desarrollando productos reconocidos a nivel nacional.</p>
+                        </div>
+                    </div>
+                    <img class="us__stats__img" src="build/assets/img/stats.avif" lazyalt="stats" loading="lazy"
+                        decoding="async">
+                </div>
+            </div>
+
+            <div class="us__process">
+                <h2 class="us__process__title">¿Cómo funciona el proceso?</h2>
+                <p class="us__process__description">Nos enfocamos en entender a fondo tus necesidades y objetivos para
+                    ofrecerte soluciones efectivas.</p>
+                <div class="us__process__steps">
+                    <div class="us__process__step">
+                        <span class="material-symbols-rounded us__process__step--icon">explore</span>
+                        <div class="us__process__step--info">
+                            <h3 class="us__process__step--title"><span>01.</span> Descubrimiento</h3>
+                            <p class="us__process__step--text">Agendamos una llamada para conocerte, analizar tus
+                                necesidades y objetivos.</p>
+                        </div>
+                    </div>
+                    <div class="us__process__step">
+                        <span class="material-symbols-rounded us__process__step--icon">target</span>
+                        <div class="us__process__step--info">
+                            <h3 class="us__process__step--title"><span>02.</span> Definición</h3>
+                            <p class="us__process__step--text">Alineamos los objetivos del proyecto a un alcance
+                                técnico, cronograma y presupuesto específico.</p>
+                        </div>
+                    </div>
+                    <div class="us__process__step">
+                        <span class="material-symbols-rounded us__process__step--icon">palette</span>
+                        <div class="us__process__step--info">
+                            <h3 class="us__process__step--title"><span>03.</span> Sistema de diseño</h3>
+                            <p class="us__process__step--text">Definimos los tokens de diseño que se aplicarán en el
+                                desarrollo, asegurando una experiencia alineada con la identidad de la marca.</p>
+                        </div>
+                    </div>
+                    <div class="us__process__step">
+                        <span class="material-symbols-rounded us__process__step--icon">build_circle</span>
+                        <div class="us__process__step--info">
+                            <h3 class="us__process__step--title"><span>04.</span> Desarrollo</h3>
+                            <p class="us__process__step--text">Construimos tu solución con las mejores herramientas,
+                                cumpliendo con los requerimientos.</p>
+                        </div>
+                    </div>
+                    <div class="us__process__step">
+                        <span class="material-symbols-rounded us__process__step--icon">checklist</span>
+                        <div class="us__process__step--info">
+                            <h3 class="us__process__step--title"><span>05.</span> Pruebas</h3>
+                            <p class="us__process__step--text">Probamos la solución en distintos ambientes, brindando
+                                fiabilidad y efectividad.</p>
+                        </div>
+                    </div>
+                    <div class="us__process__step">
+                        <span class="material-symbols-rounded us__process__step--icon">lightbulb</span>
+                        <div class="us__process__step--info">
+                            <h3 class="us__process__step--title"><span>06.</span> Soporte</h3>
+                            <p class="us__process__step--text">Te asesoramos y establecemos las bases para darle
+                                continuidad o mantenimiento a la solución.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--REVIEWS-->
+    <section class="reviews block">
+        <h2 class="reviews__title">Testimonios</h2>
+
+        <div class="reviews__carousel-container">
+            <button class="reviews__carouselBtn reviews__carouselBtn--prev" aria-label="Anterior">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+
+            <div class="reviews__carousel">
+                <div class="reviews review">
+                    <div class="review__info">
+                        <div class="review__stars">
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                        </div>
+                        <p class="review__description">“Trabajar con Devri fue un cambio de juego para nuestra
+                            estrategia digital. Su enfoque en datos y creatividad nos permitió conectar con nuestra
+                            audiencia de una forma auténtica.”</p>
+                        <p class="review__rol">Mariana Ríos - CMO en Nébula Agency</p>
+                        <img class="review__image" src="build/assets/img/reviews/review1.avif" lazyalt="review1"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="reviews review">
+                    <div class="review__info">
+                        <div class="review__stars">
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                        </div>
+                        <p class="review__description">“El equipo de Devri entendió nuestra visión desde el primer
+                            momento. La solución que desarrollaron no solo es funcional, sino visualmente impecable.”
+                        </p>
+                        <p class="review__rol">Carlos Méndez - Fundador de EcoTrack</p>
+                        <img class="review__image" src="build/assets/img/reviews/review2.avif" lazyalt="review2"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="reviews review">
+                    <div class="review__info">
+                        <div class="review__stars">
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                        </div>
+                        <p class="review__description">“No había experimentado un proceso tan claro y profesional. Devri
+                            tradujo nuestras ideas en una presencia digital poderosa.”</p>
+                        <p class="review__rol">Ana Beltrán - CM Solis Group</p>
+                        <img class="review__image" src="build/assets/img/reviews/review3.avif" lazyalt="review3"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="reviews review">
+                    <div class="review__info">
+                        <div class="review__stars">
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                        </div>
+                        <p class="review__description">“Gracias a Devri, nuestra plataforma ahora es rápida, moderna y
+                            preparada para escalar. Los recomiendo con total confianza.”</p>
+                        <p class="review__rol">Luis Fernando Ortega - CEO en Velox Logistics</p>
+                        <img class="review__image" src="build/assets/img/reviews/review4.avif" lazyalt="review4"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="reviews review">
+                    <div class="review__info">
+                        <div class="review__stars">
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                        </div>
+                        <p class="review__description">“El equipo combinó diseño con tecnología de forma magistral.
+                            Captaron la esencia de nuestra marca en cada línea de código.”</p>
+                        <p class="review__rol">Gabriela Ramírez - Directora Creativa en Brava Studio</p>
+                        <img class="review__image" src="build/assets/img/reviews/review5.avif" lazyalt="review5"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="reviews review">
+                    <div class="review__info">
+                        <div class="review__stars">
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                        </div>
+                        <p class="review__description">“Devri fue más allá del desarrollo: aportaron ideas, visión
+                            estratégica y un nivel de detalle impecable. Un aliado clave en nuestra transformación
+                            digital.”</p>
+                        <p class="review__rol">Rodrigo Sáenz - Product Manager en OptiNet</p>
+                        <img class="review__image" src="build/assets/img/reviews/review6.avif" lazyalt="review6"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="reviews review">
+                    <div class="review__info">
+                        <div class="review__stars">
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                        </div>
+                        <p class="review__description">“Nuestra tienda en línea ahora refleja lo que somos como marca.
+                            Devri no solo diseñó, nos ayudó a conectar con nuestros clientes.”</p>
+                        <p class="review__rol">Elena Torres - Co-Fundadora de Alma Viva</p>
+                        <img class="review__image" src="build/assets/img/reviews/review7.avif" lazyalt="review7"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="reviews review">
+                    <div class="review__info">
+                        <div class="review__stars">
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                        </div>
+                        <p class="review__description">“Rápidos, organizados y técnicamente impecables. El equipo de
+                            Devri resolvió problemas complejos con soluciones simples y elegantes.”</p>
+                        <p class="review__rol">Diego Paredes - CFO en MindBoost</p>
+                        <img class="review__image" src="build/assets/img/reviews/review8.avif" lazyalt="review8"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="reviews review">
+                    <div class="review__info">
+                        <div class="review__stars">
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                        </div>
+                        <p class="review__description">“Devri le dio vida a mi marca en el mundo digital. Su enfoque
+                            humano y profesional hizo toda la diferencia.”</p>
+                        <p class="review__rol">Patricia Luna - Consultora de Marca Personal</p>
+                        <img class="review__image" src="build/assets/img/reviews/review9.avif" lazyalt="review9"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="reviews review">
+                    <div class="review__info">
+                        <div class="review__stars">
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                            <span class="material-symbols-rounded reviews__icon">stars</span>
+                        </div>
+                        <p class="review__description">“La solución que construyó Devri mejoró nuestros procesos
+                            internos y nuestra imagen externa. Son mucho más que un proveedor, son un socio
+                            estratégico.”</p>
+                        <p class="review__rol">Julián Navarro - Director Comercial en NovaPay</p>
+                        <img class="review__image" src="build/assets/img/reviews/review10.avif" lazyalt="review10"
+                            loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+
+            <button class="reviews__carouselBtn reviews__carouselBtn--next" aria-label="Siguiente">
+                <span class="material-symbols-rounded">chevron_right</span>
+            </button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <!--Logo and Title-->
+            <div class="footer__general">
+                <a href="index.html" class="footer__logo">
+                    <img src="build/assets/icons/devri-logo-dark.svg" alt="Devri Solutions Logo"
+                        class="footer__logo--img">
+                    <p class="footer__logo--text">DEVRI</p>
+                </a>
+                <address>Ciudad de México, México, 07600.</address>
+            </div>
+            <div class="footer__information">
+                <div class="footer__block">
+                    <h4 class="footer__block--title">Horarios</h4>
+                    <ul class="footer__block--list">
+                        <li>Lunes a Viernes</li>
+                        <li>9 AM - 5 PM </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__block--title">Contacto</h4>
+                    <ul class="footer__block--list">
+                        <li><a href="mailto:info@devri.com.mx?subject=Asunto...&body=Mensaje...">info@devri.com.mx</a>
+                        </li>
+                        <li><a href="tel:5531434429">+52 55 31 43 44 29</a></li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__block--title">Empresa</h4>
+                    <ul class="footer__block--list">
+                        <li><a href="/servicio-social">Servicio Social</a></li>
+                        <li><a href="/bolsa-laboral">Bolsa de Trabajo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy"></p>
+
+    </footer>
+
+    <script src="build/js/nav.js"></script>
+    <script>
+        const track = document.getElementById('slide-track');
+        const clones = track.innerHTML;
+        track.innerHTML += clones; // duplica automáticamente
+
+        const copy = document.querySelector('.footer__copy');
+        const currentYear = new Date().getFullYear();
+        copy.textContent = `© ${currentYear} Devri Solutions. Todos los derechos reservados.`;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            typeWriterEffect(
+                document.querySelector('.hero__title'),
+                "Haz que tu marca deje huella en el mundo digital",
+                60 // velocidad en ms
+            );
+            function typeWriterEffect(element, text, speed = 0) {
+                element.textContent = ""; // limpia contenido original
+                let index = 0;
+                const interval = setInterval(() => {
+                    if (index < text.length) {
+                        element.textContent += text.charAt(index);
+                        index++;
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, speed);
+            }
+        });
+    </script>
+    <script src="build/js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.desktop {
+    display: none;
+
+    @include m.tablet {
+        display: inline-block;
+        font-size: 1.6rem;
+    }
+
+    // List
+    &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: v.$spaceSmall;
+
+    }
+
+    // Items of the list
+    &__link {
+        display: inline-block;
+        color: var(--colorText1);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: v.$fontWeightBold;
+
+        &:hover {
+            color: var(--colorHover);
+            transform: scale(1.05);
+        }
+
+        &.active {
+            color: var(--colorHover);
+            transform: scale(1.05);
+        }
+
+    }
+
+    // Dropdown
+    &__dropdown {
+        position: relative;
+
+        &--btn {
+            display: flex;
+            gap: v.$spaceTiny;
+            align-items: center;
+            justify-content: space-between;
+            background: none;
+            border: none;
+            color: var(--colorText1);
+            cursor: pointer;
+
+            .material-symbols-rounded {
+                transition: transform 0.3s ease-in-out;
+                color: var(--colorHover);
+                font-size: 2rem;
+                margin-bottom: 0.3rem;
+
+                &.rotateDrop {
+                    transform: rotate(180deg);
+                    color: var(--colorHoverSecondary);
+                }
+            }
+        }
+    }
+
+    &__submenu {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        gap: v.$spaceTiny;
+        width: 20rem;
+        padding: v.$spaceSmall 0;
+        align-items: center;
+        background-color: var(--colorTrasparent);
+
+        &.openSubmenu {
+            display: flex; // Show when active
+        }
+
+    }
+
+    // Dropdown
+    &__dropdown2 {
+
+        &--btn2 {
+            display: flex;
+            gap: v.$spaceTiny;
+            align-items: center;
+            justify-content: space-between;
+            background: none;
+            border: none;
+            color: var(--colorText1);
+            cursor: pointer;
+
+            .material-symbols-rounded {
+                transition: transform 0.3s ease-in-out;
+                color: var(--colorHover);
+                font-size: 2rem;
+                margin-bottom: 0.3rem;
+
+                &.rotateDrop {
+                    transform: rotate(180deg);
+                    color: var(--colorHoverSecondary);
+                }
+            }
+        }
+    }
+
+    &__submenu2 {
+        display: none;
+        flex-direction: column;
+        gap: v.$spaceTiny;
+        padding-left: v.$spaceSmall;
+        margin-top: v.$spaceTiny;
+        width: 100%;
+
+        &.openSubmenu {
+            display: flex; // Show when active
+        }
+    }
+
+    // Dropdown
+    &__dropdown3 {
+
+        &--btn3 {
+            display: flex;
+            gap: v.$spaceTiny;
+            align-items: center;
+            justify-content: space-between;
+            background: none;
+            border: none;
+            color: var(--colorText1);
+            cursor: pointer;
+
+            .material-symbols-rounded {
+                transition: transform 0.3s ease-in-out;
+                color: var(--colorHover);
+                font-size: 2rem;
+                margin-bottom: 0.3rem;
+
+                &.rotateDrop {
+                    transform: rotate(180deg);
+                    color: var(--colorHoverSecondary);
+                }
+            }
+        }
+    }
+
+    &__submenu3 {
+        display: none;
+        flex-direction: column;
+        gap: v.$spaceTiny;
+        padding-left: v.$spaceSmall;
+        margin-top: v.$spaceTiny;
+        width: 100%;
+
+        &.openSubmenu {
+            display: flex; // Show when active
+        }
+    }
+
+
+    &__option a {
+        color: var(--colorHover);
+
+        &:hover {
+            color: var(--colorHoverSecondary);
+            transform: scale(1.1) !important;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__theme-toggle {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        height: 2rem;
+
+        .material-symbols-rounded {
+            font-size: 3rem;
+            color: var(--colorText1); // o usa v.$colorTertiaryAux si prefieres
+        }
+
+        #theme-icon {
+            font-size: 2.2rem;
+            color: var(--colorText1); // o usa v.$colorTertiaryAux si prefieres
+        }
+
+        input[type='checkbox'] {
+            display: none;
+
+            &:checked+.switch {
+                background-color: v.$colorTertiary;
+
+                &::before {
+                    transform: translateX(2.4rem);
+                }
+            }
+        }
+
+        .switch {
+            width: 5rem;
+            height: 2.6rem;
+            background-color: v.$colorTertiary;
+            border-radius: 9999px;
+            position: relative;
+            transition: background-color 0.3s;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0.2rem;
+                left: 0.2rem;
+                width: 2.2rem;
+                height: 2.2rem;
+                background-color: v.$colorTertiaryAux;
+                border-radius: 50%;
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+
+}

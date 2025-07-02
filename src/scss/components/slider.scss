@@ -1,0 +1,54 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.logo-slider {
+  margin-top: v.$spaceSmall;
+  overflow: hidden;
+  position: relative;
+  height: 10rem;
+
+  @include m.mobile {
+    height: 7rem;
+    margin-top: v.$spaceRegular;
+  }
+
+  .slide-track {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: fit-content;
+    animation: scroll 20s linear infinite;
+  }
+
+  .slide {
+    flex: 0 0 calc(100% / 3); // mobile
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    @include m.mobile {
+      flex: 0 0 calc(100% / 4); // tablet
+    }
+
+    @include m.tablet {
+      flex: 0 0 calc(100% / 6); // desktop
+    }
+
+
+    img {
+      max-height: 100%;
+      width: auto;
+      display: block;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}

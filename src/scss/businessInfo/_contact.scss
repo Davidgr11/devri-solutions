@@ -1,0 +1,69 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.contact {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: v.$spaceRegular;
+
+        @include m.tablet {
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+    &__form {
+        background-color: var(--colorFooter);
+        box-shadow: 0 0 10px var(--colorFooter);
+        border-radius: v.$spaceSmall;
+        padding: v.$spaceSmall;
+
+        form {
+            margin: v.$spaceSmall 0;
+            label {
+                font-weight: v.$fontWeightBold;
+                font-size: 2.2rem;
+            }
+            input, textarea, select {
+                border-color: var(--colorHover);
+                background-color: var(--colorBackground1);
+                border-radius: v.$spaceTiny;
+                padding: v.$spaceTiny;
+                display: block;
+                width: 100%;
+                margin-bottom: v.$spaceSmall;
+                color: var(--colorHover);
+            }
+            button {
+                margin-top: v.$spaceSmall;
+                @include m.btn(var(--colorBackground1), var(--colorHover));
+            }
+        }
+    }
+    &__img {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+
+        @include m.tablet {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+}
+
+.building {
+    &__img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+
+        @include m.tablet {
+            width: 50%;
+            height: auto;
+        }
+    }
+}
