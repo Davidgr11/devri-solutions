@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://devri.com.mx/sitemap.xml
