@@ -88,7 +88,7 @@ function renderResumen() {
             summaryList.appendChild(item);
         });
 
-        summaryTotal.textContent = `$${total} a $${total+(total/2)} MXN`;
+        summaryTotal.textContent = `$${total.toLocaleString('en-US')} a $${(total+(total/2)).toLocaleString('en-US')} MXN`;
 
     }
     
