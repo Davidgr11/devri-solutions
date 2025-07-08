@@ -6,9 +6,11 @@
     <title>Servicios Devri</title>
     <!--META-->
     <meta charset="UTF-8">
-    <meta name="description" content="Agencia de desarrollo web y marketing digital en Ciudad de México. Creamos soluciones digitales personalizadas para impulsar tu negocio.">
-    <meta name="keywords" content="Desarrollo Web, Marketing Digital, Agencia Digital, Automatizaciones, Tiendas en Línea, Aplicaciones Web, Diseño de Marcas, Gestión de Redes Sociales, Publicidad">
-    <meta name="author" content="DEVRI SAPI DE CV">
+    <meta name="description"
+        content="Agencia de desarrollo web y marketing digital en Ciudad de México. Creamos soluciones digitales personalizadas para impulsar tu negocio.">
+    <meta name="keywords"
+        content="Desarrollo Web, Marketing Digital, Agencia Digital, Automatizaciones, Tiendas en Línea, Aplicaciones Web, Diseño de Marcas, Gestión de Redes Sociales, Publicidad, Devri, DEVRI, Devri Solutions, Agencia de Innovación, Transformación Digital">
+    <meta name="author" content="DEVRI SAPI DE CV, Devri Solutions, Devri">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--FAVICON-->
     <link rel="icon" type="image/png" href="build/assets/icons/devri-logo-light.svg">
@@ -23,6 +25,16 @@
 </head>
 
 <body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECSZSPQZCH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ECSZSPQZCH');
+    </script>
+
     <header class="header">
 
         <div class="bar">
@@ -77,11 +89,10 @@
                                     <span class="material-symbols-rounded">arrow_drop_down_circle</span>
                                 </button>
                                 <ul class="desktop__submenu3">
-                                    <li class="desktop__option"><a href="servicios.html?id=branding">Diseño de
+                                    <li class="desktop__option"><a href="servicios.html?id=branding">Identidad de
                                             Marcas</a></li>
-                                    <li class="desktop__option"><a href="servicios.html?id=socialMedia">Gestión de
-                                            Redes</a></li>
-                                    <li class="desktop__option"><a href="servicios.html?id=ads">Publicidad</a></li>
+                                    <li class="desktop__option"><a href="servicios.html?id=socialMedia">Estrategia Digital</a></li>
+                                    <li class="desktop__option"><a href="servicios.html?id=email">Email Marketing</a></li>
                                 </ul>
                             </li>
                             <!--<li><a href="servicio2.html">Marketing</a></li>-->
@@ -137,11 +148,11 @@
                                 <span class="material-symbols-rounded">arrow_drop_down_circle</span>
                             </button>
                             <ul class="mobile__submenu3">
-                                <li class="mobile__option"><a href="servicios.html?id=branding">Diseño de Marcas</a>
+                                <li class="mobile__option"><a href="servicios.html?id=branding">Identidad de Marcas</a>
                                 </li>
-                                <li class="mobile__option"><a href="servicios.html?id=socialMedia">Gestión de Redes</a>
+                                <li class="mobile__option"><a href="servicios.html?id=socialMedia">Estrategia Digital</a>
                                 </li>
-                                <li class="mobile__option"><a href="servicios.html?id=ads">Publicidad</a></li>
+                                <li class="mobile__option"><a href="servicios.html?id=email">Email Marketing</a></li>
                             </ul>
                         </li>
                         <!--<li><a href="servicio2.html">Marketing</a></li>-->
@@ -154,8 +165,14 @@
             </ul>
         </nav>
 
-
     </header>
+
+    <aside class="chatbot">
+        <a class="chatbot__link" href="https://chatgpt.com/g/g-686c7b2024e88191bfce6d857761c00f-devri-solutions" target="_blank" rel="noopener noreferrer">
+            <img src="build/assets/img/Nico Devri.avif" lazyalt="chatbot" loading="lazy" decoding="async">
+        </a>
+    </aside>
+
 
     <!-- Hero Section -->
     <section class="hero__services block">
@@ -167,7 +184,120 @@
         </div>
     </section>
 
-    <!-- Service Description -->
+    <!--SERVICES-->
+    <section class="services block">
+        <h2 class="services__subtitle">Desarrollo de software</h2>
+
+        <div class="services__carousel-container">
+            <button class="services__carouselBtn services__carouselBtn--prev" aria-label="Anterior">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+
+            <!--Software-->
+            <div class="services__carousel">
+                <div class="service service--software">
+                    <img class="service__image" src="build/assets/img/services/serviceS1.avif" lazyalt="serviceS1"
+                        loading="lazy" decoding="async">
+                    <div class="service__info">
+                        <h4 class="service__title">Landing Page</h4>
+                        <p class="service__description">Convierte visitantes en próximos clientes.</p>
+                        <a href="servicios.html?id=landing" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--software">
+                    <img class="service__image" src="build/assets/img/services/serviceS2.avif" lazyalt="serviceS2"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Sitio Web</h4>
+                        <p class="service__description">Aumenta tu presencia en el mundo digital.</p>
+                        <a href="servicios.html?id=website" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--software">
+                    <img class="service__image" src="build/assets/img/services/serviceS3.avif" lazyalt="serviceS3"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Automatización</h4>
+                        <p class="service__description">Facilita procesos con herramientas interactivas.</p>
+                        <a href="servicios.html?id=auto" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--software">
+                    <img class="service__image" src="build/assets/img/services/serviceS4.avif" lazyalt="serviceS4"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Tienda Virtual</h4>
+                        <p class="service__description">Comienza a verder tus productos online.</p>
+                        <a href="servicios.html?id=ecommerce" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--software">
+                    <img class="service__image" src="build/assets/img/services/serviceS5.avif" lazyalt="serviceS5"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Web App</h4>
+                        <p class="service__description">Soluciones a la medida para tu operación.</p>
+                        <a href="servicios.html?id=webApp" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="services__carouselBtn services__carouselBtn--next" aria-label="Siguiente">
+                <span class="material-symbols-rounded">chevron_right</span>
+            </button>
+        </div>
+
+        <!--Marketing-->
+        <h2 class="services__subtitle">Marketing digital</h2>
+        <div class="services__carousel-container">
+            <button class="services__carouselBtn services__carouselBtn--prev2" aria-label="Anterior">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+
+            <div class="services__carousel2">
+                <div class="service service--marketing">
+                    <img class="service__image" src="build/assets/img/services/serviceM1.avif" lazyalt="serviceM1"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Identidad de Marca</h4>
+                        <p class="service__description">Crea una marca que deje huella.</p>
+                        <a href="servicios.html?id=branding" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--marketing">
+                    <img class="service__image" src="build/assets/img/services/serviceM2.avif" lazyalt="serviceM2"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Estrategia Digital</h4>
+                        <p class="service__description">Genera confianza en redes sociales.</p>
+                        <a href="servicios.html?id=socialMedia" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+                <div class="service service--marketing">
+                    <img class="service__image" src="build/assets/img/services/serviceM3.avif" lazyalt="serviceM3"
+                        loading="lazy" decoding="async">
+
+                    <div class="service__info">
+                        <h4 class="service__title">Email Marketing</h4>
+                        <p class="service__description">Fideliza, informa y crea relaciones.</p>
+                        <a href="servicios.html?id=email" class="service__button">Conocer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="services__carouselBtn services__carouselBtn--next2" aria-label="Siguiente">
+                <span class="material-symbols-rounded">chevron_right</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Service Use Cases -->
     <main class="serInfo block" id="service-info">
         <h2 class="serInfo__title"></h2>
         <div class="serInfo__container">
@@ -186,19 +316,20 @@
     <aside class="serInfo__aside block">
         <h2 class="serInfo__title3">¿Que impacto tiene?</h2>
         <div class="serInfo__data">
-
         </div>
-        <iframe class="serInfo__video" src="https://www.youtube.com/embed/aAtGJzqY0qg?si=12N9CluVOx2qeoKh"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </aside>
+
+    <!-- Service Description -->
+    <section class="serInfo__includes block">
+        <h2 class="serInfo__includes--heading">¿Qué incluye?</h2>
+        <!-- Service Includes -->
+        <div class="serInfo__includes--list">
+        </div>
+    </section>
 
     <section class="serInfo__cta block">
         <h2 class="serInfo__cta--title">¿Listo para llevar tu proyecto al siguiente nivel?</h2>
-        <button class="serInfo__cta--btn">
-            <a href="cotizar.html">Cotiza</a>
-        </button>
+        <a class="serInfo__cta--btn" href="cotizar.html">QUIERO COTIZAR</a>
     </section>
 
     <footer class="footer">
@@ -242,6 +373,8 @@
     </footer>
     <script src="build/js/nav.js"></script>
     <script src="build/js/services.js"></script>
+    <script src="build/js/carousel.js"></script>
+
 </body>
 
 </html>

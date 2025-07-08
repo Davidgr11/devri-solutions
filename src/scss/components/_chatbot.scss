@@ -1,0 +1,27 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.chatbot {
+    &__link {
+        background-color: var(--colorHover);
+        width: 5rem;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        border: 0.15rem solid var(--colorText1);
+        border-radius: 50%;
+        z-index: 1001;
+
+        &:hover {
+            @include m.scale;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        @include m.tablet {
+            width: 5.5rem;
+        }
+    }
+}

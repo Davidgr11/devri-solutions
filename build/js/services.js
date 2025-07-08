@@ -8,6 +8,9 @@ const serInfoText = document.querySelector('.serInfo__text');
 const serInfoImg = document.querySelector('.serInfo__img');
 const usos = document.querySelector('.serInfo__usos');
 const serInfodata = document.querySelector('.serInfo__data');
+const serviciosGeneral = document.querySelector('.services');
+const serIncludes = document.querySelector('.serInfo__includes--list');
+const link = document.querySelector('.serInfo__cta--btn');
 
 // Cargar JSON dinámicamente
 const url = '/build/js/services.json'; // Ruta al archivo JSON
@@ -17,6 +20,8 @@ fetch(url)
     const servicio = servicios[servicioID];
 
     if (servicio) {
+      // Limpiar contenido previo
+      serviciosGeneral.remove();
       title.textContent = servicio.titulo;
       subtitle.textContent = servicio.subtitulo || ''; // Manejar subtítulo si existe
       serInfoTitle.textContent = servicio.infoTitle || 'Información del Servicio'; // Manejar título de información si existe
@@ -27,7 +32,7 @@ fetch(url)
         const usecaseElement = document.createElement('div');
         usecaseElement.classList.add('serInfo__uso');
         const span = document.createElement('span');
-        span.textContent = 'check';
+        span.textContent = 'lightbulb';
         span.classList.add('material-symbols-rounded');
         const useCaseText = document.createElement('p');
         useCaseText.classList.add('serInfo__uso--text');
@@ -55,8 +60,35 @@ fetch(url)
 
         serInfodata.appendChild(dataElement);
       });
+      servicio.includes.forEach(usecase => {
+        const includesElement = document.createElement('div');
+        includesElement.classList.add('serInfo__includes--item');
+        const span = document.createElement('span');
+        span.textContent = 'check';
+        span.classList.add('material-symbols-rounded');
+        const includeText = document.createElement('p');
+        includeText.classList.add('seriInfo__includes--item--text');
+        includeText.textContent = usecase || 'Descripción del caso de uso no disponible.';
+
+        includesElement.appendChild(span);
+        includesElement.appendChild(includeText);
+
+        serIncludes.appendChild(includesElement);
+      });
+      link.href = `cotizar.html?cotizar=${servicioID}`; // Actualizar el enlace de cotización
     } else {
-      title.innerHTML = `<h1>Servicio no encontrado</h1>`;
+      title.textContent = 'Nuestros Servicios';
+      subtitle.textContent = 'Creamos soluciones digitales para impulsar cada etapa de tu negocio o marca.';
+      const serInfoButtons = document.querySelector('.hero__services--buttons');
+      const serInfoUseCases = document.querySelector('.serInfo');
+      const serInfoStats = document.querySelector('.serInfo__aside');
+      const serInfoCta = document.querySelector('.serInfo__cta');
+      const serInfoIncludes = document.querySelector('.serInfo__includes');
+      serInfoButtons.remove();
+      serInfoUseCases.remove();
+      serInfoStats.remove();
+      serInfoCta.remove();
+      serInfoIncludes.remove();
     }
   })
   .catch(error => {

@@ -6,9 +6,11 @@
     <title>Cotizar Devri</title>
     <!--META-->
     <meta charset="UTF-8">
-    <meta name="description" content="Agencia de desarrollo web y marketing digital en Ciudad de México. Creamos soluciones digitales personalizadas para impulsar tu negocio.">
-    <meta name="keywords" content="Desarrollo Web, Marketing Digital, Agencia Digital, Automatizaciones, Tiendas en Línea, Aplicaciones Web, Diseño de Marcas, Gestión de Redes Sociales, Publicidad">
-    <meta name="author" content="DEVRI SAPI DE CV">
+    <meta name="description"
+        content="Agencia de desarrollo web y marketing digital en Ciudad de México. Creamos soluciones digitales personalizadas para impulsar tu negocio.">
+    <meta name="keywords"
+        content="Desarrollo Web, Marketing Digital, Agencia Digital, Automatizaciones, Tiendas en Línea, Aplicaciones Web, Diseño de Marcas, Gestión de Redes Sociales, Publicidad, Devri, DEVRI, Devri Solutions, Agencia de Innovación, Transformación Digital">
+    <meta name="author" content="DEVRI SAPI DE CV, Devri Solutions, Devri">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--FAVICON-->
     <link rel="icon" type="image/png" href="build/assets/icons/devri-logo-light.svg">
@@ -23,6 +25,16 @@
 </head>
 
 <body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECSZSPQZCH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ECSZSPQZCH');
+    </script>
+
     <header class="header">
 
         <div class="bar">
@@ -77,11 +89,12 @@
                                     <span class="material-symbols-rounded">arrow_drop_down_circle</span>
                                 </button>
                                 <ul class="desktop__submenu3">
-                                    <li class="desktop__option"><a href="servicios.html?id=branding">Diseño de
+                                    <li class="desktop__option"><a href="servicios.html?id=branding">Identidad de
                                             Marcas</a></li>
-                                    <li class="desktop__option"><a href="servicios.html?id=socialMedia">Gestión de
-                                            Redes</a></li>
-                                    <li class="desktop__option"><a href="servicios.html?id=ads">Publicidad</a></li>
+                                    <li class="desktop__option"><a href="servicios.html?id=socialMedia">Estrategia
+                                            Digital</a></li>
+                                    <li class="desktop__option"><a href="servicios.html?id=email">Email Marketing</a>
+                                    </li>
                                 </ul>
                             </li>
                             <!--<li><a href="servicio2.html">Marketing</a></li>-->
@@ -137,11 +150,12 @@
                                 <span class="material-symbols-rounded">arrow_drop_down_circle</span>
                             </button>
                             <ul class="mobile__submenu3">
-                                <li class="mobile__option"><a href="servicios.html?id=branding">Diseño de Marcas</a>
+                                <li class="mobile__option"><a href="servicios.html?id=branding">Identidad de Marcas</a>
                                 </li>
-                                <li class="mobile__option"><a href="servicios.html?id=socialMedia">Gestión de Redes</a>
+                                <li class="mobile__option"><a href="servicios.html?id=socialMedia">Estrategia
+                                        Digital</a>
                                 </li>
-                                <li class="mobile__option"><a href="servicios.html?id=ads">Publicidad</a></li>
+                                <li class="mobile__option"><a href="servicios.html?id=email">Email Marketing</a></li>
                             </ul>
                         </li>
                         <!--<li><a href="servicio2.html">Marketing</a></li>-->
@@ -154,26 +168,33 @@
             </ul>
         </nav>
 
-
     </header>
+
+    <aside class="chatbot">
+        <a class="chatbot__link" href="https://chatgpt.com/g/g-686c7b2024e88191bfce6d857761c00f-devri-solutions" target="_blank" rel="noopener noreferrer">
+            <img src="build/assets/img/Nico Devri.avif" lazyalt="chatbot" loading="lazy" decoding="async">
+        </a>
+    </aside>
 
     <!-- Hero Section -->
     <section class="hero__services block">
-        <h1 class="hero__services--title">Paquetes y Precios</h1>
-        <h3 class="hero__services--subtitle">Contamos con planes a la medida de tu marca o negocio.</h3>
+        <h1 class="hero__services--title">Cotiza los Servicios</h1>
+        <h3 class="hero__services--subtitle">Contamos con precios a la medida de tu marca o negocio.</h3>
     </section>
 
 
     <section class="pricing block">
-        <h2 class="pricing__title">Cotiza los servicios de tu interés</h2>
         <!--SUMMARY-->
         <div class="pricing__summary">
-            <h3 class="pricing__summary-title">Cotización:</h3>
+            <h3 class="pricing__summary-title">Resumen de la cotización:</h3>
             <ul class="pricing__summary-list" id="summary-list">
             </ul>
             <p class="pricing__summary-total">PRECIO ESTIMADO: <span id="summary-total"></span></p>
+            <a class="pricing__summary-link hidden" id="summary-whatsapp" href="" target="_blank">
+                Enviar por WhatsApp para recibir más información.
+            </a>
         </div>
-
+        <h3 class="pricing__title">Añade servicios a la cotización:</h3>
         <div class="pricing__container" id="pricing-container">
         </div>
     </section>
@@ -201,7 +222,8 @@
                 <div class="footer__block">
                     <h4 class="footer__block--title">Contacto</h4>
                     <ul class="footer__block--list">
-                        <li><a href="mailto:info@devri.com.mx?subject=Asunto...&body=Mensaje...">info@devri.com.mx</a></li>
+                        <li><a href="mailto:info@devri.com.mx?subject=Asunto...&body=Mensaje...">info@devri.com.mx</a>
+                        </li>
                         <li><a href="tel:5531434429">+52 55 31 43 44 29</a></li>
                     </ul>
                 </div>

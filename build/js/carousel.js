@@ -1,72 +1,72 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const carousel = document.querySelector('.services__carousel');
-  const btnPrev = document.querySelector('.services__carouselBtn--prev');
-  const btnNext = document.querySelector('.services__carouselBtn--next');
+  // ----- FUNCIÓN REUTILIZABLE -----
+  function setupCarousel(carouselSelector, cardSelector, btnPrevSelector, btnNextSelector) {
+    const carousel = document.querySelector(carouselSelector);
+    const btnPrev = document.querySelector(btnPrevSelector);
+    const btnNext = document.querySelector(btnNextSelector);
 
-  if (!carousel || !btnPrev || !btnNext) return;
+    if (!carousel || !btnPrev || !btnNext) return;
 
-  // Detecta la cantidad de scroll por card
-  const getCardWidth = () => {
-    const firstCard = carousel.querySelector('.service--software');
-    if (!firstCard) return 0;
-    const style = window.getComputedStyle(firstCard);
-    const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
-    return firstCard.offsetWidth + margin;
-  };
+    // Detecta la cantidad de scroll por card
+    const getCardWidth = () => {
+      const firstCard = carousel.querySelector(cardSelector);
+      if (!firstCard) return 0;
+      const style = window.getComputedStyle(firstCard);
+      const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+      return firstCard.offsetWidth + margin;
+    };
 
-  btnNext.addEventListener('click', () => {
-    carousel.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
-  });
+    // Oculta/activa los botones según el scroll
+    const updateButtons = () => {
+      // Al inicio
+      btnPrev.style.display = carousel.scrollLeft <= 0 ? 'none' : '';
+      // Al final
+      const tolerance = 5;
+      btnNext.style.display =
+        (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - tolerance)
+          ? 'none'
+          : '';
+    };
 
-  btnPrev.addEventListener('click', () => {
-    carousel.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
-  });
-});
-document.addEventListener('DOMContentLoaded', () => {
-  const carousel2 = document.querySelector('.services__carousel2');
-  const btnPrev2 = document.querySelector('.services__carouselBtn--prev2');
-  const btnNext2 = document.querySelector('.services__carouselBtn--next2');
+    // Inicializar estado de botones
+    updateButtons();
 
-  if (!carousel2 || !btnPrev2 || !btnNext2) return;
+    btnNext.addEventListener('click', () => {
+      carousel.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+    });
 
-  // Detecta la cantidad de scroll por card
-  const getCardWidth = () => {
-    const firstCard2 = carousel2.querySelector('.service--marketing');
-    if (!firstCard2) return 0;
-    const style = window.getComputedStyle(firstCard2);
-    const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
-    return firstCard2.offsetWidth + margin;
-  };
+    btnPrev.addEventListener('click', () => {
+      carousel.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+    });
 
-  btnNext2.addEventListener('click', () => {
-    carousel2.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
-  });
+    // Actualizar al hacer scroll manual o por botón
+    carousel.addEventListener('scroll', updateButtons);
+    window.addEventListener('resize', updateButtons);
+  }
 
-  btnPrev2.addEventListener('click', () => {
-    carousel2.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
-  });
-});
-document.addEventListener('DOMContentLoaded', () => {
-  const carousel3 = document.querySelector('.reviews__carousel');
-  const btnPrev3 = document.querySelector('.reviews__carouselBtn--prev');
-  const btnNext3 = document.querySelector('.reviews__carouselBtn--next');
+  // ----- APLICA LA FUNCIÓN PARA CADA CARRUSEL -----
 
-  if (!carousel3 || !btnPrev3 || !btnNext3) return;
+  // 1. Carrusel de software
+  setupCarousel(
+    '.services__carousel',
+    '.service--software',
+    '.services__carouselBtn--prev',
+    '.services__carouselBtn--next'
+  );
 
-  // Detecta la cantidad de scroll por card
-  const getCardWidth = () => {
-    const firstCard3 = carousel3.querySelector('.review');
-    if (!firstCard3) return 0;
-    const style = window.getComputedStyle(firstCard3);
-    const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
-    return firstCard3.offsetWidth + margin;
-  };
+  // 2. Carrusel de marketing
+  setupCarousel(
+    '.services__carousel2',
+    '.service--marketing',
+    '.services__carouselBtn--prev2',
+    '.services__carouselBtn--next2'
+  );
 
-  btnNext3.addEventListener('click', () => {
-    carousel3.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
-  });
-
-  btnPrev3.addEventListener('click', () => {
-    carousel3.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
-  });
+  // 3. Carrusel de reseñas
+  setupCarousel(
+    '.reviews__carousel',
+    '.review',
+    '.reviews__carouselBtn--prev',
+    '.reviews__carouselBtn--next'
+  );
 });

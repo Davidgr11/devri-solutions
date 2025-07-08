@@ -632,6 +632,30 @@ table {
   font-weight: 800;
 }
 
+.chatbot__link {
+  background-color: var(--colorHover);
+  width: 5rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border: 0.15rem solid var(--colorText1);
+  border-radius: 50%;
+  z-index: 1001;
+}
+.chatbot__link:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.chatbot__link img {
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .chatbot__link {
+    width: 5.5rem;
+  }
+}
+
 .bar {
   background-color: var(--colorTrasparent);
   height: 6rem;
@@ -1323,19 +1347,19 @@ table {
 .hero__services--buttons a {
   padding: 1rem;
   border-radius: 2.5rem;
-  border: 0.2rem solid var(--colorHover);
+  border: 0.2rem solid var(--colorHoverSecondary);
   font-weight: 800;
   display: block;
   width: 100%;
   text-align: center;
   text-decoration: none;
   background-color: var(--colorBackground1);
-  color: var(--colorHover) !important;
-  box-shadow: 0 0.2rem 0.4rem var(--colorHover);
+  color: var(--colorHoverSecondary) !important;
+  box-shadow: 0 0.2rem 0.4rem var(--colorHoverSecondary);
 }
 .hero__services--buttons a:hover {
   color: var(--colorBackground1) !important;
-  background-color: var(--colorHover);
+  background-color: var(--colorHoverSecondary);
   border-color: var(--colorBackground1);
   transition: all 0.2s linear;
   cursor: pointer;
@@ -1413,7 +1437,6 @@ table {
   align-items: center;
   justify-content: flex-start;
   gap: 2.5rem;
-  font-weight: 800;
 }
 .serInfo__uso span {
   margin: 0;
@@ -1422,29 +1445,8 @@ table {
   color: var(--colorHover);
   font-size: 4rem;
 }
-.serInfo__video {
-  width: 100%;
-  height: 20rem;
-  border-radius: 2.5rem;
-  margin: 0 auto;
-}
-@media (min-width: 480px) {
-  .serInfo__video {
-    height: 30rem;
-  }
-}
-@media (min-width: 768px) {
-  .serInfo__video {
-    height: 40rem;
-  }
-}
-@media (min-width: 1024px) {
-  .serInfo__video {
-    height: 50rem;
-  }
-}
 .serInfo__data {
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 0 0;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -1471,25 +1473,63 @@ table {
 .serInfo__data--text {
   font-style: italic;
 }
+.serInfo__includes--heading {
+  padding-bottom: 2.5rem;
+}
+.serInfo__includes--list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background-color: var(--colorFooter);
+  padding: 2.5rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 1rem 1rem var(--colorFooter);
+}
+@media (min-width: 768px) {
+  .serInfo__includes--list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .serInfo__includes--list {
+    column-gap: 10rem;
+  }
+}
+.serInfo__includes--item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  font-weight: 800;
+}
+.serInfo__includes--item span {
+  margin: 0;
+}
+.serInfo__includes--item .material-symbols-rounded {
+  color: var(--colorHover);
+  font-size: 4rem;
+}
 .serInfo__cta--btn {
   width: 50%;
   margin: 0 auto;
   margin-top: 2.5rem;
   padding: 1rem;
   border-radius: 2.5rem;
-  border: 0.2rem solid var(--colorHoverSecondary);
+  border: 0.2rem solid var(--colorHover);
   font-weight: 800;
   display: block;
   width: 100%;
   text-align: center;
   text-decoration: none;
   background-color: var(--colorBackground1);
-  color: var(--colorHoverSecondary) !important;
-  box-shadow: 0 0.2rem 0.4rem var(--colorHoverSecondary);
+  color: var(--colorHover) !important;
+  box-shadow: 0 0.2rem 0.4rem var(--colorHover);
 }
 .serInfo__cta--btn:hover {
   color: var(--colorBackground1) !important;
-  background-color: var(--colorHoverSecondary);
+  background-color: var(--colorHover);
   border-color: var(--colorBackground1);
   transition: all 0.2s linear;
   cursor: pointer;
@@ -1512,7 +1552,7 @@ table {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  margin: 2.5rem 0;
+  margin-bottom: 2.5rem;
 }
 @media (min-width: 768px) {
   .pricing__summary {
@@ -1529,14 +1569,6 @@ table {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
-}
-@media (min-width: 768px) {
-  .pricing__summary-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
-    column-gap: 5rem;
-  }
 }
 .pricing__summary-item {
   display: flex;
@@ -1564,9 +1596,31 @@ table {
   color: var(--colorHover);
   display: inline-block;
 }
+.pricing__summary-link {
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  border: 0.2rem solid var(--colorHover);
+  font-weight: 800;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--colorFooter);
+  color: var(--colorHover) !important;
+  box-shadow: 0 0.2rem 0.4rem var(--colorHover);
+}
+.pricing__summary-link:hover {
+  color: var(--colorFooter) !important;
+  background-color: var(--colorHover);
+  border-color: var(--colorFooter);
+  transition: all 0.2s linear;
+  cursor: pointer;
+  transform: scale(1.05);
+}
 @media (min-width: 768px) {
-  .pricing__summary-total {
-    text-align: left;
+  .pricing__summary-link {
+    width: 70%;
   }
 }
 .pricing__container {
@@ -1615,13 +1669,32 @@ table {
   background: var(--colorHover);
   color: var(--colorBackground1);
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 2.5rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
 }
 .pricing__service-select-btn.is-selected {
   background-color: var(--colorHoverSecondary);
+}
+.pricing__service-details {
+  width: 100%;
+  padding: 0.1rem 1rem;
+  text-align: center;
+  background: var(--colorBackground1);
+  color: var(--colorText1);
+  border: 0.2rem solid var(--colorHover);
+  border-radius: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.pricing__title {
+  margin-bottom: 2.5rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .us__container {
@@ -1671,7 +1744,6 @@ table {
   object-fit: cover;
   margin: 0 auto;
   border-radius: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 .us__stat {
   text-align: center;
@@ -1695,6 +1767,27 @@ table {
 }
 .us__stat:nth-child(3) {
   grid-row: 3/4;
+}
+.us__video {
+  width: 100%;
+  height: 20rem;
+  border-radius: 2.5rem;
+  margin: 0 auto;
+}
+@media (min-width: 480px) {
+  .us__video {
+    height: 30rem;
+  }
+}
+@media (min-width: 768px) {
+  .us__video {
+    height: 40rem;
+  }
+}
+@media (min-width: 1024px) {
+  .us__video {
+    height: 50rem;
+  }
 }
 .us__process__description {
   margin: 2.5rem 0;
@@ -1727,7 +1820,7 @@ table {
 }
 .us__process__step--title {
   text-align: justify;
-  color: var(--colorBackground2);
+  color: var(--colorHover);
 }
 .us__process__step--info {
   order: 1;

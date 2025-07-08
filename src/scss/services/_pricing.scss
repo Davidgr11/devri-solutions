@@ -14,7 +14,7 @@
         display: flex;
         flex-direction: column;
         gap: v.$spaceSmall;
-        margin: v.$spaceSmall 0;
+        margin-bottom: v.$spaceSmall;
 
         @include m.tablet {
             gap: v.$spaceRegular;
@@ -31,13 +31,6 @@
             flex-direction: column;
             gap: v.$spaceTiny;
             align-items: center;
-
-            @include m.tablet {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                justify-content: space-around;
-                column-gap: v.$spaceRegular;
-            }
         }
 
         &-item {
@@ -70,9 +63,13 @@
                 color: var(--colorHover);
                 display: inline-block;
             }
+        }
 
+        &-link{
+            margin: 0 auto;
+            @include m.btn(var(--colorHover), var(--colorFooter));
             @include m.tablet {
-                text-align: left;
+                width: 70%;
             }
         }
 
@@ -127,7 +124,7 @@
             background: var(--colorHover);
             color: var(--colorBackground1);
             border: none;
-            border-radius: 0.5rem;
+            border-radius: v.$spaceSmall;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s;
@@ -136,9 +133,29 @@
                 background-color: var(--colorHoverSecondary);
             }
         }
+        &-details {
+            width: 100%;
+            padding: 0.1rem 1rem;
+            text-align: center;
+            background: var(--colorBackground1);
+            color: var(--colorText1);
+            border: 0.2rem solid var(--colorHover);
+            border-radius: v.$spaceSmall;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+
+        }
 
     }
 
+    &__title {
+        margin-bottom: v.$spaceSmall;
+    }
+
+}
+.hidden {
+  display: none;
 }
 
 //btn.innerHTML = '✅ Seleccionado';

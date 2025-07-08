@@ -55,7 +55,6 @@
             object-fit: cover;
             margin: 0 auto;
             border-radius: v.$spaceSmall;
-            margin-bottom: v.$spaceSmall;
         }
     }
 
@@ -83,6 +82,23 @@
 
         &:nth-child(3) {
             grid-row: 3/4;
+        }
+    }
+
+    // VIDEO
+    &__video {
+        width: 100%;
+        height: 20rem;
+        border-radius: v.$spaceSmall;
+        margin: 0 auto;
+        @include m.mobile {
+            height: 30rem;
+        }
+        @include m.tablet {
+            height: 40rem;
+        }
+        @include m.desktop {
+            height: 50rem;
         }
     }
 
@@ -121,7 +137,7 @@
 
             &--title {
                 text-align: justify;
-                color: var(--colorBackground2);
+                color: var(--colorHover);
             }
 
             &--info {

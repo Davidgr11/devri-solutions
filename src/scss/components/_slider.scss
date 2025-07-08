@@ -22,7 +22,7 @@
 
   .slide {
     flex: 0 0 calc(100% / 3); // mobile
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -48,6 +48,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-200%);
   }

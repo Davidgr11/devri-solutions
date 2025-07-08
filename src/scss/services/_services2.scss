@@ -41,7 +41,7 @@
         }
 
         a {
-            @include m.btn(var(--colorHover), var(--colorBackground1));
+            @include m.btn(var(--colorHoverSecondary), var(--colorBackground1));
         }
     }
 }
@@ -108,7 +108,6 @@
         align-items: center;
         justify-content: flex-start;
         gap: v.$spaceSmall;
-        font-weight: v.$fontWeightBold;
         span {
             margin: 0;
         }
@@ -118,24 +117,8 @@
         }
     }
 
-    &__video {
-        width: 100%;
-        height: 20rem;
-        border-radius: v.$spaceSmall;
-        margin: 0 auto;
-        @include m.mobile {
-            height: 30rem;
-        }
-        @include m.tablet {
-            height: 40rem;
-        }
-        @include m.desktop {
-            height: 50rem;
-        }
-    }
-
     &__data{
-        padding: v.$spaceSmall 0;
+        padding: v.$spaceSmall 0 0 0;
         display: flex;
         flex-direction: column;
         gap: v.$spaceSmall;
@@ -163,12 +146,49 @@
             font-style: v.$fontStyleSecondary;
         }
     }
+
+    &__includes--heading{
+        padding-bottom: v.$spaceSmall;
+    }
+
+    &__includes--list{
+        display: flex;
+        flex-direction: column;
+        gap: v.$spaceSmall;
+        background-color: var(--colorFooter);
+        padding: v.$spaceSmall;
+        border-radius: v.$spaceSmall;
+        box-shadow: 0 1rem 1rem var(--colorFooter);
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: v.$spaceRegular;
+        }
+        @include m.desktop {
+            column-gap: v.$spaceBig;
+        }
+    }
+    &__includes--item{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: v.$spaceSmall;
+        font-weight: v.$fontWeightBold;
+        span {
+            margin: 0;
+        }
+        .material-symbols-rounded {
+            color: var(--colorHover);
+            font-size: 4rem;
+        }
+    }
+
     &__cta{
         &--btn{
             width: 50%;
             margin: 0 auto;
             margin-top: v.$spaceSmall;
-            @include m.btn(var(--colorHoverSecondary), var(--colorBackground1));
+            @include m.btn(var(--colorHover), var(--colorBackground1));
 
             @include m.tablet {
                 width: 30%;

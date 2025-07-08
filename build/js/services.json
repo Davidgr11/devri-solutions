@@ -15,14 +15,34 @@
       "Para que los usuarios se registren en una lista de espera."
     ],
     "data": [
-      {"number": "+300%", "text": "más conversiones cuando existe una landing page con un solo objetivo claro."},
-      {"number": "48%", "text": "de campañas fallan por no usar una landing page dedicada."},
-      {"number": "–50%", "text": "en costos por adquisición con una landing bien optimizada."}
+      {
+        "number": "+300%",
+        "text": "más conversiones cuando existe una landing page con un solo objetivo claro."
+      },
+      {
+        "number": "48%",
+        "text": "de campañas fallan por no usar una landing page dedicada."
+      },
+      {
+        "number": "–50%",
+        "text": "en costos por adquisición con una landing bien optimizada."
+      }
+    ],
+    "includes": [
+      "Diseño personalizado y adaptado a tu marca.",
+      "Diseño responsivo para móviles, tablets y computadoras.",
+      "Optimización de imágenes para mejorar la velocidad de carga.",
+      "Desarrollo de 1 página de aterrizaje con un objetivo claro.",
+      "Integración de formulario con base de datos o CRM.",
+      "Redirección a una URL específica tras la conversión.",
+      "Hosting y dominio personalizado.",
+      "Certificado SSL para seguridad.",
+      "Extra a cotizar: Integrar herramientas de análisis como Google Analytics.",
+      "Extra a cotizar: Copywriting persuasivo y enfocado en conversión."
     ]
   },
-
   "website": {
-    "titulo": "Sitios Web",
+    "titulo": "Sitio Web",
     "subtitulo": "Creamos sitios web modernos, rápidos y optimizados para tu negocio.",
     "infoTitle": "¿Qué es un Sitio Web Profesional?",
     "infoText": "Un sitio web es la base digital de tu negocio. Es una herramienta clave para comunicar tu propuesta de valor, generar confianza y ofrecer contenido útil a tus usuarios.",
@@ -33,21 +53,41 @@
       "Para mejorar la imagen profesional de tu marca.",
       "Para mostrar productos, servicios y testimonios.",
       "Para posicionarte orgánicamente en buscadores (SEO).",
-      "Para integrar funcionalidades como blogs, formularios o chat.",
-      "Para establecer presencia 24/7 sin depender de redes sociales."
+      "Para establecer presencia 24/7 sin depender de redes sociales.",
+      "Para ofrecer información de contacto y ubicación fácilmente."
     ],
     "data": [
-      {"number": "94%", "text": "de primeras impresiones están relacionadas con el diseño web."},
-      {"number": "75%", "text": "de usuarios juzgan la credibilidad de una empresa por su sitio web."},
-      {"number": "53%", "text": "de los usuarios abandonan un sitio si tarda más de 3 segundos en cargar."}
+      {
+        "number": "94%",
+        "text": "de primeras impresiones están relacionadas con el diseño web."
+      },
+      {
+        "number": "75%",
+        "text": "de usuarios juzgan la credibilidad de una empresa por su sitio web."
+      },
+      {
+        "number": "53%",
+        "text": "de los usuarios abandonan un sitio si tarda más de 3 segundos en cargar."
+      }
+    ],
+    "includes": [
+      "Diseño personalizado y adaptado a tu marca.",
+      "Diseño responsivo para móviles, tablets y computadoras.",
+      "Optimización de imágenes para mejorar la velocidad de carga.",
+      "Desarrollo de sitio web de hasta 5 páginas, barra de navegación y pie de página.",
+      "Integración de formulario con base de datos o CRM.",
+      "Hosting y dominio personalizado.",
+      "Certificado SSL para seguridad.",
+      "SEO básico para mejorar visibilidad en buscadores.",
+      "Extra a cotizar: Integrar herramientas de análisis como Google Analytics.",
+      "Extra a cotizar: Generación de contenido como imágenes, textos o videos."
     ]
   },
-
   "auto": {
     "titulo": "Automatizaciones (SPAs, Widgets, APIs)",
     "subtitulo": "Desarrollamos soluciones interactivas, modulares y automatizadas que elevan la experiencia digital.",
     "infoTitle": "¿Qué son las Automatizaciones Digitales?",
-    "infoText": "Son herramientas y procesos que permiten que tu sistema trabaje por ti. Desde SPAs hasta microservicios y APIs, automatizamos tareas para mejorar eficiencia y escalabilidad.",
+    "infoText": "Son herramientas y procesos que permiten que tu sistema trabaje por ti. Desde SPA's, hasta microservicios y APIs, automatizamos tareas para mejorar eficiencia y escalabilidad.",
     "infoImg": "/build/assets/img/services2/auto.avif",
     "infoTitle2": "¿Para qué usos es ideal?",
     "useCases": [
@@ -59,12 +99,30 @@
       "Para escalar sin contratar más personal."
     ],
     "data": [
-      {"number": "30%", "text": "de las tareas en empresas pueden automatizarse con tecnología actual."},
-      {"number": "10x", "text": "más rápido escalar operaciones con APIs bien diseñadas."},
-      {"number": "70%", "text": "menos errores cuando se automatizan flujos repetitivos."}
+      {
+        "number": "30%",
+        "text": "de las tareas en empresas pueden automatizarse con tecnología actual."
+      },
+      {
+        "number": "10x",
+        "text": "más rápido escalar operaciones con APIs bien diseñadas."
+      },
+      {
+        "number": "70%",
+        "text": "menos errores cuando se automatizan flujos repetitivos."
+      }
+    ],
+    "includes": [
+      "Diseño personalizado y adaptado a tu marca.",
+      "Diseño responsivo para móviles, tablets y computadoras.",
+      "Análisis de flujos de trabajo y procesos existentes a automatizar.",
+      "1 Automatización de tareas repetitivas o procesos internos.",
+      "Integración con sistemas existentes (CRM, bases de datos, etc.).",
+      "Capacitación básica sobre la solución implementada.",
+      "Hosting y dominio personalizado.",
+      "Certificado SSL para seguridad."
     ]
   },
-
   "ecommerce": {
     "titulo": "Tiendas en Línea",
     "subtitulo": "Creamos eCommerce funcionales, atractivos y enfocados en conversión.",
@@ -81,12 +139,34 @@
       "Para vincular redes sociales a tu tienda (Facebook, Instagram Shopping)."
     ],
     "data": [
-      {"number": "22%", "text": "de las ventas minoristas ya se hacen en línea."},
-      {"number": "80%", "text": "de usuarios abandonan una tienda si no es responsiva."},
-      {"number": "35%", "text": "más retención con tiendas optimizadas para móvil."}
+      {
+        "number": "22%",
+        "text": "de las ventas minoristas ya se hacen en línea."
+      },
+      {
+        "number": "80%",
+        "text": "de usuarios abandonan una tienda si no es responsiva."
+      },
+      {
+        "number": "35%",
+        "text": "más retención con tiendas optimizadas para móvil."
+      }
+    ],
+    "includes": [
+      "Diseño personalizado y adaptado a tu marca.",
+      "Diseño responsivo para móviles, tablets y computadoras.",
+      "Desarrollo de sitio web de hasta 3 páginas, barra de navegación y pie de página.",
+      "Integración de carrito de compras y pasarela de pago segura con MercadoPago.",
+      "Panel de administración de productos y gestión de inventario.",
+      "Hosting y dominio personalizado.",
+      "Certificado SSL para seguridad.",
+      "SEO básico para mejorar visibilidad en buscadores.",
+      "Extra a cotizar: Integrar herramientas de análisis como Google Analytics.",
+      "Extra a cotizar: Generación de contenido como imágenes, textos o videos.",
+      "Extra a cotizar: Capacitación básica para el manejo de la tienda.",
+      "Extra a cotizar: Gestión de envíos y logística."
     ]
   },
-
   "webApp": {
     "titulo": "Aplicaciones Web",
     "subtitulo": "Desarrollamos sistemas web a medida para tu negocio o startup.",
@@ -103,12 +183,33 @@
       "Para construir MVPs o prototipos funcionales para inversores."
     ],
     "data": [
-      {"number": "67%", "text": "de las startups exitosas construyen un MVP con tecnología web."},
-      {"number": "4x", "text": "más rápido lanzar una app web que una app nativa completa."},
-      {"number": "90%", "text": "de las funciones empresariales pueden operar desde una app web."}
+      {
+        "number": "67%",
+        "text": "de las startups exitosas construyen un MVP con tecnología web."
+      },
+      {
+        "number": "4x",
+        "text": "más rápido lanzar una app web que una app nativa completa."
+      },
+      {
+        "number": "90%",
+        "text": "de las funciones empresariales pueden operar desde una app web."
+      }
+    ],
+    "includes": [
+      "Diseño personalizado y adaptado a tu marca.",
+      "Diseño responsivo para móviles, tablets y computadoras.",
+      "Análisis de requerimientos, flujos de usuario y lógica de negocio.",
+      "Autenticación y gestión de usuarios.",
+      "Desarrollo de funcionalidades y módulos específicos según requerimientos.",
+      "Integración con bases de datos y APIs externas.",
+      "Panel de administración para gestión de datos.",
+      "Seguridad y protección de datos.",
+      "Hosting y dominio personalizado.",
+      "Certificado SSL para seguridad.",
+      "Manual de usuario y capacitación básica."
     ]
   },
-
   "branding": {
     "titulo": "Diseño e Identidad de Marca",
     "subtitulo": "Creamos marcas memorables, coherentes y con personalidad propia.",
@@ -125,14 +226,30 @@
       "Para asegurar consistencia en redes sociales, web y presentaciones."
     ],
     "data": [
-      {"number": "3x", "text": "más reconocimiento tienen las marcas con una identidad visual coherente."},
-      {"number": "90%", "text": "de consumidores esperan una experiencia visual consistente."},
-      {"number": "7 segundos", "text": "basta para que un usuario forme una impresión de tu marca."}
+      {
+        "number": "3x",
+        "text": "más reconocimiento tienen las marcas con una identidad visual coherente."
+      },
+      {
+        "number": "90%",
+        "text": "de consumidores esperan una experiencia visual consistente."
+      },
+      {
+        "number": "7 segundos",
+        "text": "basta para que un usuario forme una impresión de tu marca."
+      }
+    ],
+    "includes": [
+      "Diseño de paleta de colores.",
+      "Tipografía y fuentes recomendadas.",
+      "Definición de slogan, mensajes clave y tono de voz.",
+      "Guía de estilo de la marca con uso correcto de colores, tipografías y logotipo.",
+      "Mockups de aplicación de la marca en redes, web o papelería digital.",
+      "Extra a cotizar: Logotipo personalizado y adaptado a su marca en formatos png y svg."
     ]
   },
-
   "socialMedia": {
-    "titulo": "Gestión de Redes Sociales",
+    "titulo": "Estrategia Digital en Redes Sociales",
     "subtitulo": "Creamos contenido que conecta y construimos comunidad en torno a tu marca.",
     "infoTitle": "¿Qué es la Gestión de Redes Sociales?",
     "infoText": "Es el proceso de crear, programar y analizar contenido en redes como Instagram, Facebook, LinkedIn y más, para construir relaciones con tu audiencia.",
@@ -147,31 +264,64 @@
       "Para delegar la comunicación digital de tu marca."
     ],
     "data": [
-      {"number": "70%", "text": "de las marcas afirman que redes sociales aumentaron su visibilidad."},
-      {"number": "50%", "text": "de consumidores siguen a marcas para estar al día con lanzamientos."},
-      {"number": "80%", "text": "de los usuarios interactúan más con marcas activas en redes."}
+      {
+        "number": "70%",
+        "text": "de las marcas afirman que redes sociales aumentaron su visibilidad."
+      },
+      {
+        "number": "50%",
+        "text": "de consumidores siguen a marcas para estar al día con lanzamientos."
+      },
+      {
+        "number": "80%",
+        "text": "de los usuarios interactúan más con marcas activas en redes."
+      }
+    ],
+    "includes": [
+      "Análisis de audiencia, competencia y tendencias del sector.",
+      "Definición de métricas, KPI's y objetivos clave a medir.",
+      "Diseño de estrategia para alcanzar metas específicas como conectar con la audiencia, aumentar seguidores o generar leads.",
+      "Extra a cotizar: Creación, calendarización y publicación de contenido para redes sociales, mensual.",
+      "Extra a cotizar: Gestión de campañas publicitarias en redes sociales, mensual.",
+      "Extra a cotizar: Respuesta a mensajes y comentarios de usuarios, mensual."
     ]
   },
-
-  "ads": {
-    "titulo": "Publicidad Digital",
-    "subtitulo": "Diseñamos campañas que maximizan el alcance y el retorno de inversión.",
-    "infoTitle": "¿Qué es la Publicidad Digital?",
-    "infoText": "Es el uso de plataformas digitales para promocionar productos o servicios, segmentando audiencias y optimizando conversiones a través de anuncios pagados.",
+  "email": {
+    "titulo": "Email Marketing",
+    "subtitulo": "Construimos relaciones duraderas a través de campañas de correo efectivas.",
+    "infoTitle": "¿Qué es Email Marketing?",
+    "infoText": "El email sigue siendo el canal más rentable para fidelizar clientes y aumentar ventas. Creamos campañas que conectan y venden.",
     "infoImg": "/build/assets/img/services2/ads.avif",
     "infoTitle2": "¿Para qué usos es ideal?",
     "useCases": [
-      "Para impulsar tráfico a tu sitio o landing.",
-      "Para aumentar ventas rápidamente.",
-      "Para captar leads calificados desde redes o Google.",
-      "Para promover eventos o lanzamientos.",
-      "Para testear productos o servicios nuevos.",
-      "Para posicionarte en buscadores frente a la competencia."
+      "Para nutrir y fidelizar tu base de clientes.",
+      "Para lanzar promociones, novedades o eventos.",
+      "Para automatizar seguimientos y recordatorios.",
+      "Para convertir leads en clientes.",
+      "Para mantener contacto frecuente con tu comunidad.",
+      "Para segmentar y personalizar mensajes según intereses."
     ],
     "data": [
-      {"number": "200%", "text": "de retorno promedio en campañas bien segmentadas."},
-      {"number": "49%", "text": "de usuarios han hecho una compra influenciada por un anuncio en redes."},
-      {"number": "96%", "text": "de los anunciantes consideran Google Ads altamente efectivo."}
+      {
+        "number": "42x",
+        "text": "es el retorno promedio: por cada $1 invertido en email marketing se generan $42 en ventas."
+      },
+      {
+        "number": "80%",
+        "text": "de las empresas afirman que el email mantiene a sus clientes informados."
+      },
+      {
+        "number": "77%",
+        "text": "de los usuarios prefieren recibir promociones por correo que por redes sociales."
+      }
+    ],
+    "includes": [
+      "Creación y diseño 3 plantillas personalizadas de email marketing.",
+      "Análisis de su comunidad para la correcta segmentación de las plantillas.",
+      "Redacción de contenido persuasivo y enfocado en conversión.",
+      "Extra a cotizar: Automatizaci´ón de envios con herramientas como Mailchimp o Sendinblue.",
+      "Extra a cotizar: Creación de lista de contactos segmentada con herramientas como Mailchimp o Sendinblue.",
+      "Extra a cotizar: Análisis de métricas con herramientas como Mailchimp o Sendinblue."
     ]
   }
 }
