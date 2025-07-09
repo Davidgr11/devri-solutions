@@ -8,6 +8,8 @@
 /aplicaciones-web             /servicios.html?id=webApp               200
 /diseño-marca             /servicios.html?id=branding               200
 /redes-sociales             /servicios.html?id=socialMedia               200
-/publicidad             /servicios.html?id=ads               200
+/email             /servicios.html?id=email               200
 /proyectos             /proyectos.html             200
 /cotizar             /cotizar.html             200
+/contacto             /contacto.html             200
+https://www.devri.com.mx/* https://devri.com.mx/:splat 301!
