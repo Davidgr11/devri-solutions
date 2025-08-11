@@ -2095,6 +2095,10 @@ table {
   margin-bottom: 2.5rem;
   color: var(--colorHover);
 }
+.contact__form form input:focus, .contact__form form textarea:focus, .contact__form form select:focus {
+  outline: none;
+  border-color: var(--colorHoverSecondary);
+}
 .contact__form form button {
   margin-top: 2.5rem;
   padding: 1rem;
